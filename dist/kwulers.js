@@ -334,7 +334,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _namedColours = __webpack_require__(/*! ./lib/namedColours */ "./src/lib/namedColours.js");
 
-console.log(_namedColours.namedColours);
 /**
  * [description]
  * @param  {[type]} name [description]
@@ -571,7 +570,7 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var colours = exports.colours = {
+var namedColours = exports.namedColours = {
   "aliceblue": "#f0f8ff",
   "antiquewhite": "#faebd7",
   "aqua": "#00ffff",

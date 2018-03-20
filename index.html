@@ -5,12 +5,48 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <div id="demo"></div>
+    <table id="demo">
+      <thead>
+        <tr>
+          <th>Colour</th>
+          <th>Colour Name</th>
+          <th>Hex</th>
+          <th>RGB</th>
+          <th>HSL</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
     <script src="dist/kwulers.js"></script>
 
     <script type="text/javascript">
-      const container = document.getElementById('demo');
-      container.innerHTML = kwulers.getCSSFromRGB([255, 255, 255]);
+      const table = document.getElementById('demo');
+      const tbody = table.querySelector('tbody');
+
+      const colours = [
+        "Black",
+        "White",
+        "Red",
+        "Lime",
+        "Blue",
+        "Yellow",
+        "Cyan",
+        "Magenta",
+        "Silver",
+        "Gray",
+        "Maroon",
+        "Olive",
+        "Green",
+        "Purple",
+        "Teal",
+        "Navy",
+      ];
+
+      for (let i = 0; i <= colours.length; i++) {
+        console.log('' + i + ' = ' + colours[i]);
+      }
 
       console.log(kwulers);
     </script>
