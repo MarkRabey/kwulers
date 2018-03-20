@@ -307,7 +307,7 @@ var getHexFromRGB = exports.getHexFromRGB = function getHexFromRGB(rgb) {
 
   for (var i = 0; i < 3; i++) {
     if (hex[i] < 10 || hex[i].length === 1) {
-      hex[i] = '#' + hex[i];
+      hex[i] = '0' + hex[i];
     }
   }
 
