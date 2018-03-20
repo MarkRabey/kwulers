@@ -1,3 +1,4 @@
+'use strict';
 /**
  * [description]
  * @param  {[type]} hex [description]

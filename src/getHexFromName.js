@@ -1,3 +1,4 @@
+'use strict';
 import { namedColours } from './lib/namedColours';
 
 /**
@@ -7,7 +8,7 @@ import { namedColours } from './lib/namedColours';
  */
 export const getHexFromName = (name) => {
   if (typeof namedColours[name.toLowerCase()] !== undefined) {
-    return namedColours[name.toLowerCase()]
+    return namedColours[name.toLowerCase()].toUpperCase();
   }
 
   return false;

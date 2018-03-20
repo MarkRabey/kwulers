@@ -89,26 +89,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getCMYKFromHex = undefined;
-
-var _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ "./src/getRGBFromHex.js");
-
-var _getCMYKFromRGB = __webpack_require__(/*! ./getCMYKFromRGB */ "./src/getCMYKFromRGB.js");
-
-/**
- * [description]
- * @param  {[type]} hex [description]
- * @return {[type]}     [description]
- */
-var getCMYKFromHex = exports.getCMYKFromHex = function getCMYKFromHex(hex) {
-  var rgb = (0, _getRGBFromHex.getRGBFromHex)(hex);
-  return (0, _getCMYKFromRGB.getCMYKFromRGB)(rgb);
-};
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getCMYKFromHex = undefined;\n\nvar _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ \"./src/getRGBFromHex.js\");\n\nvar _getCMYKFromRGB = __webpack_require__(/*! ./getCMYKFromRGB */ \"./src/getCMYKFromRGB.js\");\n\n/**\n * [description]\n * @param  {[type]} hex [description]\n * @return {[type]}     [description]\n */\nvar getCMYKFromHex = exports.getCMYKFromHex = function getCMYKFromHex(hex) {\n  var rgb = (0, _getRGBFromHex.getRGBFromHex)(hex);\n  return (0, _getCMYKFromRGB.getCMYKFromRGB)(rgb);\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldENNWUtGcm9tSGV4LmpzPzMwNjkiXSwibmFtZXMiOlsiZ2V0Q01ZS0Zyb21IZXgiLCJoZXgiLCJyZ2IiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7O0FBQ0E7O0FBQ0E7O0FBRUE7Ozs7O0FBS08sSUFBTUEsMENBQWlCLFNBQWpCQSxjQUFpQixDQUFDQyxHQUFELEVBQVM7QUFDckMsTUFBTUMsTUFBTSxrQ0FBY0QsR0FBZCxDQUFaO0FBQ0EsU0FBTyxvQ0FBZUMsR0FBZixDQUFQO0FBQ0QsQ0FITSIsImZpbGUiOiIuL3NyYy9nZXRDTVlLRnJvbUhleC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcbmltcG9ydCB7IGdldFJHQkZyb21IZXggfSBmcm9tICcuL2dldFJHQkZyb21IZXgnO1xuaW1wb3J0IHsgZ2V0Q01ZS0Zyb21SR0IgfSBmcm9tICcuL2dldENNWUtGcm9tUkdCJztcblxuLyoqXG4gKiBbZGVzY3JpcHRpb25dXG4gKiBAcGFyYW0gIHtbdHlwZV19IGhleCBbZGVzY3JpcHRpb25dXG4gKiBAcmV0dXJuIHtbdHlwZV19ICAgICBbZGVzY3JpcHRpb25dXG4gKi9cbmV4cG9ydCBjb25zdCBnZXRDTVlLRnJvbUhleCA9IChoZXgpID0+IHtcbiAgY29uc3QgcmdiID0gZ2V0UkdCRnJvbUhleChoZXgpO1xuICByZXR1cm4gZ2V0Q01ZS0Zyb21SR0IocmdiKTtcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/getCMYKFromHex.js\n");
 
 /***/ }),
 
@@ -120,28 +101,7 @@ var getCMYKFromHex = exports.getCMYKFromHex = function getCMYKFromHex(hex) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} rgb [description]
- * @return {[type]}     [description]
- */
-var getCMYKFromRGB = exports.getCMYKFromRGB = function getCMYKFromRGB(rgb) {
-  var r = rgb[0] / 255;
-  var g = rgb[1] / 255;
-  var b = rgb[2] / 255;
-
-  var k = 1 - Math.max(r, g, b);
-  var c = (1 - r - k) / (1 - k);
-  var m = (1 - g - k) / (1 - k);
-  var y = (1 - b - k) / (1 - k);
-
-  return [Math.round(c * 100) / 100, Math.round(m * 100) / 100, Math.round(y * 100) / 100, Math.round(k * 100) / 100];
-};
+eval("\n/**\n * [description]\n * @param  {[type]} rgb [description]\n * @return {[type]}     [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getCMYKFromRGB = exports.getCMYKFromRGB = function getCMYKFromRGB(rgb) {\n  var r = rgb[0] / 255;\n  var g = rgb[1] / 255;\n  var b = rgb[2] / 255;\n\n  var k = 1 - Math.max(r, g, b);\n  var c = (1 - r - k) / (1 - k);\n  var m = (1 - g - k) / (1 - k);\n  var y = (1 - b - k) / (1 - k);\n\n  return [Math.round(c * 100) / 100, Math.round(m * 100) / 100, Math.round(y * 100) / 100, Math.round(k * 100) / 100];\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldENNWUtGcm9tUkdCLmpzP2FkOTUiXSwibmFtZXMiOlsiZ2V0Q01ZS0Zyb21SR0IiLCJyZ2IiLCJyIiwiZyIsImIiLCJrIiwiTWF0aCIsIm1heCIsImMiLCJtIiwieSIsInJvdW5kIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOzs7Ozs7Ozs7QUFLTyxJQUFNQSwwQ0FBaUIsU0FBakJBLGNBQWlCLENBQUNDLEdBQUQsRUFBUztBQUNyQyxNQUFNQyxJQUFJRCxJQUFJLENBQUosSUFBUyxHQUFuQjtBQUNBLE1BQU1FLElBQUlGLElBQUksQ0FBSixJQUFTLEdBQW5CO0FBQ0EsTUFBTUcsSUFBSUgsSUFBSSxDQUFKLElBQVMsR0FBbkI7O0FBR0EsTUFBTUksSUFBSSxJQUFJQyxLQUFLQyxHQUFMLENBQVNMLENBQVQsRUFBWUMsQ0FBWixFQUFlQyxDQUFmLENBQWQ7QUFDQSxNQUFNSSxJQUFJLENBQUMsSUFBSU4sQ0FBSixHQUFRRyxDQUFULEtBQWUsSUFBSUEsQ0FBbkIsQ0FBVjtBQUNBLE1BQU1JLElBQUksQ0FBQyxJQUFJTixDQUFKLEdBQVFFLENBQVQsS0FBZSxJQUFJQSxDQUFuQixDQUFWO0FBQ0EsTUFBTUssSUFBSSxDQUFDLElBQUlOLENBQUosR0FBUUMsQ0FBVCxLQUFlLElBQUlBLENBQW5CLENBQVY7O0FBRUEsU0FBTyxDQUNMQyxLQUFLSyxLQUFMLENBQVdILElBQUksR0FBZixJQUFzQixHQURqQixFQUVMRixLQUFLSyxLQUFMLENBQVdGLElBQUksR0FBZixJQUFzQixHQUZqQixFQUdMSCxLQUFLSyxLQUFMLENBQVdELElBQUksR0FBZixJQUFzQixHQUhqQixFQUlMSixLQUFLSyxLQUFMLENBQVdOLElBQUksR0FBZixJQUFzQixHQUpqQixDQUFQO0FBTUQsQ0FqQk0iLCJmaWxlIjoiLi9zcmMvZ2V0Q01ZS0Zyb21SR0IuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG4vKipcbiAqIFtkZXNjcmlwdGlvbl1cbiAqIEBwYXJhbSAge1t0eXBlXX0gcmdiIFtkZXNjcmlwdGlvbl1cbiAqIEByZXR1cm4ge1t0eXBlXX0gICAgIFtkZXNjcmlwdGlvbl1cbiAqL1xuZXhwb3J0IGNvbnN0IGdldENNWUtGcm9tUkdCID0gKHJnYikgPT4ge1xuICBjb25zdCByID0gcmdiWzBdIC8gMjU1O1xuICBjb25zdCBnID0gcmdiWzFdIC8gMjU1O1xuICBjb25zdCBiID0gcmdiWzJdIC8gMjU1O1xuXG5cbiAgY29uc3QgayA9IDEgLSBNYXRoLm1heChyLCBnLCBiKTtcbiAgY29uc3QgYyA9ICgxIC0gciAtIGspIC8gKDEgLSBrKTtcbiAgY29uc3QgbSA9ICgxIC0gZyAtIGspIC8gKDEgLSBrKTtcbiAgY29uc3QgeSA9ICgxIC0gYiAtIGspIC8gKDEgLSBrKTtcblxuICByZXR1cm4gW1xuICAgIE1hdGgucm91bmQoYyAqIDEwMCkgLyAxMDAsXG4gICAgTWF0aC5yb3VuZChtICogMTAwKSAvIDEwMCxcbiAgICBNYXRoLnJvdW5kKHkgKiAxMDApIC8gMTAwLFxuICAgIE1hdGgucm91bmQoayAqIDEwMCkgLyAxMDBcbiAgXTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getCMYKFromRGB.js\n");
 
 /***/ }),
 
@@ -153,19 +113,7 @@ var getCMYKFromRGB = exports.getCMYKFromRGB = function getCMYKFromRGB(rgb) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} rgb [description]
- * @return {[type]}     [description]
- */
-var getCSSFromRGB = exports.getCSSFromRGB = function getCSSFromRGB(rgb) {
-  return "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
-};
+eval("\n/**\n * [description]\n * @param  {[type]} rgb [description]\n * @return {[type]}     [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getCSSFromRGB = exports.getCSSFromRGB = function getCSSFromRGB(rgb) {\n  return 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')';\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldENTU0Zyb21SR0IuanM/OTk5YSJdLCJuYW1lcyI6WyJnZXRDU1NGcm9tUkdCIiwicmdiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOzs7Ozs7Ozs7QUFLTyxJQUFNQSx3Q0FBZ0IsU0FBaEJBLGFBQWdCLENBQUNDLEdBQUQsRUFBUztBQUNwQyxrQkFBY0EsSUFBSSxDQUFKLENBQWQsVUFBeUJBLElBQUksQ0FBSixDQUF6QixVQUFvQ0EsSUFBSSxDQUFKLENBQXBDO0FBQ0QsQ0FGTSIsImZpbGUiOiIuL3NyYy9nZXRDU1NGcm9tUkdCLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuLyoqXG4gKiBbZGVzY3JpcHRpb25dXG4gKiBAcGFyYW0gIHtbdHlwZV19IHJnYiBbZGVzY3JpcHRpb25dXG4gKiBAcmV0dXJuIHtbdHlwZV19ICAgICBbZGVzY3JpcHRpb25dXG4gKi9cbmV4cG9ydCBjb25zdCBnZXRDU1NGcm9tUkdCID0gKHJnYikgPT4ge1xuICByZXR1cm4gYHJnYigke3JnYlswXX0sICR7cmdiWzFdfSwgJHtyZ2JbMl19KWA7XG59Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/getCSSFromRGB.js\n");
 
 /***/ }),
 
@@ -177,19 +125,7 @@ var getCSSFromRGB = exports.getCSSFromRGB = function getCSSFromRGB(rgb) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} rgba [description]
- * @return {[type]}      [description]
- */
-var getCSSFromRGBA = exports.getCSSFromRGBA = function getCSSFromRGBA(rgba) {
-  return "rgba(" + rgba[0] + ", " + rgba[1] + ", " + rgba[2] + ", " + rgba[3].toFixed(2) + ")";
-};
+eval("\n/**\n * [description]\n * @param  {[type]} rgba [description]\n * @return {[type]}      [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getCSSFromRGBA = exports.getCSSFromRGBA = function getCSSFromRGBA(rgba) {\n  return 'rgba(' + rgba[0] + ', ' + rgba[1] + ', ' + rgba[2] + ', ' + rgba[3].toFixed(2) + ')';\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldENTU0Zyb21SR0JBLmpzP2Y3MTAiXSwibmFtZXMiOlsiZ2V0Q1NTRnJvbVJHQkEiLCJyZ2JhIiwidG9GaXhlZCJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTs7Ozs7Ozs7O0FBS08sSUFBTUEsMENBQWlCLFNBQWpCQSxjQUFpQixDQUFDQyxJQUFELEVBQVU7QUFDdEMsbUJBQWVBLEtBQUssQ0FBTCxDQUFmLFVBQTJCQSxLQUFLLENBQUwsQ0FBM0IsVUFBdUNBLEtBQUssQ0FBTCxDQUF2QyxVQUFtREEsS0FBSyxDQUFMLEVBQVFDLE9BQVIsQ0FBZ0IsQ0FBaEIsQ0FBbkQ7QUFDRCxDQUZNIiwiZmlsZSI6Ii4vc3JjL2dldENTU0Zyb21SR0JBLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuLyoqXG4gKiBbZGVzY3JpcHRpb25dXG4gKiBAcGFyYW0gIHtbdHlwZV19IHJnYmEgW2Rlc2NyaXB0aW9uXVxuICogQHJldHVybiB7W3R5cGVdfSAgICAgIFtkZXNjcmlwdGlvbl1cbiAqL1xuZXhwb3J0IGNvbnN0IGdldENTU0Zyb21SR0JBID0gKHJnYmEpID0+IHtcbiAgcmV0dXJuIGByZ2JhKCR7cmdiYVswXX0sICR7cmdiYVsxXX0sICR7cmdiYVsyXX0sICR7cmdiYVszXS50b0ZpeGVkKDIpfSlgXG59Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/getCSSFromRGBA.js\n");
 
 /***/ }),
 
@@ -201,26 +137,7 @@ var getCSSFromRGBA = exports.getCSSFromRGBA = function getCSSFromRGBA(rgba) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getHSLFromHex = undefined;
-
-var _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ "./src/getRGBFromHex.js");
-
-var _getHSLFromRGB = __webpack_require__(/*! ./getHSLFromRGB */ "./src/getHSLFromRGB.js");
-
-/**
- * [description]
- * @param  {[type]} hex [description]
- * @return {[type]}     [description]
- */
-var getHSLFromHex = exports.getHSLFromHex = function getHSLFromHex(hex) {
-  var rgb = (0, _getRGBFromHex.getRGBFromHex)(hex);
-  return (0, _getHSLFromRGB.getHSLFromRGB)(rgb);
-};
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getHSLFromHex = undefined;\n\nvar _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ \"./src/getRGBFromHex.js\");\n\nvar _getHSLFromRGB = __webpack_require__(/*! ./getHSLFromRGB */ \"./src/getHSLFromRGB.js\");\n\n/**\n * [description]\n * @param  {[type]} hex [description]\n * @return {[type]}     [description]\n */\nvar getHSLFromHex = exports.getHSLFromHex = function getHSLFromHex(hex) {\n  var rgb = (0, _getRGBFromHex.getRGBFromHex)(hex);\n  return (0, _getHSLFromRGB.getHSLFromRGB)(rgb);\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldEhTTEZyb21IZXguanM/N2UzZCJdLCJuYW1lcyI6WyJnZXRIU0xGcm9tSGV4IiwiaGV4IiwicmdiIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7OztBQUNBOztBQUNBOztBQUVBOzs7OztBQUtPLElBQU1BLHdDQUFnQixTQUFoQkEsYUFBZ0IsQ0FBQ0MsR0FBRCxFQUFTO0FBQ3BDLE1BQU1DLE1BQU0sa0NBQWNELEdBQWQsQ0FBWjtBQUNBLFNBQU8sa0NBQWNDLEdBQWQsQ0FBUDtBQUNELENBSE0iLCJmaWxlIjoiLi9zcmMvZ2V0SFNMRnJvbUhleC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcbmltcG9ydCB7IGdldFJHQkZyb21IZXggfSBmcm9tICcuL2dldFJHQkZyb21IZXgnO1xuaW1wb3J0IHsgZ2V0SFNMRnJvbVJHQiB9IGZyb20gJy4vZ2V0SFNMRnJvbVJHQic7XG5cbi8qKlxuICogW2Rlc2NyaXB0aW9uXVxuICogQHBhcmFtICB7W3R5cGVdfSBoZXggW2Rlc2NyaXB0aW9uXVxuICogQHJldHVybiB7W3R5cGVdfSAgICAgW2Rlc2NyaXB0aW9uXVxuICovXG5leHBvcnQgY29uc3QgZ2V0SFNMRnJvbUhleCA9IChoZXgpID0+IHtcbiAgY29uc3QgcmdiID0gZ2V0UkdCRnJvbUhleChoZXgpO1xuICByZXR1cm4gZ2V0SFNMRnJvbVJHQihyZ2IpO1xufSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getHSLFromHex.js\n");
 
 /***/ }),
 
@@ -232,55 +149,7 @@ var getHSLFromHex = exports.getHSLFromHex = function getHSLFromHex(hex) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} rgb [description]
- * @return {[type]}     [description]
- */
-var getHSLFromRGB = exports.getHSLFromRGB = function getHSLFromRGB(rgb) {
-  var r = rgb[0] / 255;
-  var g = rgb[1] / 255;
-  var b = rgb[2] / 255;
-
-  var min = Math.min(r, g, b);
-  var max = Math.max(r, g, b);
-  var delta = max - min;
-  var h = void 0,
-      s = void 0,
-      l = void 0;
-
-  if (max === min) {
-    h = 0;
-  } else if (r === max) {
-    h = (g - b) / delta;
-  } else if (g === max) {
-    h = 2 + (b - r) / delta;
-  } else if (b === max) {
-    h = 4 + (r - g) / delta;
-  }
-
-  h = Math.min(h * 60, 360);
-  if (h < 0) {
-    h += 360;
-  }
-
-  l = (min + max) / 2;
-
-  if (max === min) {
-    s = 0;
-  } else if (l <= 0.5) {
-    s = delta / (max + min);
-  } else {
-    s = delta / (2 - min - max);
-  }
-
-  return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];
-};
+eval("\n/**\n * [description]\n * @param  {[type]} rgb [description]\n * @return {[type]}     [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getHSLFromRGB = exports.getHSLFromRGB = function getHSLFromRGB(rgb) {\n  var r = rgb[0] / 255;\n  var g = rgb[1] / 255;\n  var b = rgb[2] / 255;\n\n  var min = Math.min(r, g, b);\n  var max = Math.max(r, g, b);\n  var delta = max - min;\n  var h = void 0,\n      s = void 0,\n      l = void 0;\n\n  if (max === min) {\n    h = 0;\n  } else if (r === max) {\n    h = (g - b) / delta;\n  } else if (g === max) {\n    h = 2 + (b - r) / delta;\n  } else if (b === max) {\n    h = 4 + (r - g) / delta;\n  }\n\n  h = Math.min(h * 60, 360);\n  if (h < 0) {\n    h += 360;\n  }\n\n  l = (min + max) / 2;\n\n  if (max === min) {\n    s = 0;\n  } else if (l <= 0.5) {\n    s = delta / (max + min);\n  } else {\n    s = delta / (2 - min - max);\n  }\n\n  return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldEhTTEZyb21SR0IuanM/MjQ3MyJdLCJuYW1lcyI6WyJnZXRIU0xGcm9tUkdCIiwicmdiIiwiciIsImciLCJiIiwibWluIiwiTWF0aCIsIm1heCIsImRlbHRhIiwiaCIsInMiLCJsIiwicm91bmQiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7Ozs7Ozs7OztBQUtPLElBQU1BLHdDQUFnQixTQUFoQkEsYUFBZ0IsQ0FBQ0MsR0FBRCxFQUFTO0FBQ3BDLE1BQU1DLElBQUlELElBQUksQ0FBSixJQUFTLEdBQW5CO0FBQ0EsTUFBTUUsSUFBSUYsSUFBSSxDQUFKLElBQVMsR0FBbkI7QUFDQSxNQUFNRyxJQUFJSCxJQUFJLENBQUosSUFBUyxHQUFuQjs7QUFFQSxNQUFNSSxNQUFNQyxLQUFLRCxHQUFMLENBQVNILENBQVQsRUFBV0MsQ0FBWCxFQUFhQyxDQUFiLENBQVo7QUFDQSxNQUFNRyxNQUFNRCxLQUFLQyxHQUFMLENBQVNMLENBQVQsRUFBV0MsQ0FBWCxFQUFhQyxDQUFiLENBQVo7QUFDQSxNQUFNSSxRQUFRRCxNQUFNRixHQUFwQjtBQUNBLE1BQUlJLFVBQUo7QUFBQSxNQUFPQyxVQUFQO0FBQUEsTUFBVUMsVUFBVjs7QUFFQSxNQUFJSixRQUFRRixHQUFaLEVBQWlCO0FBQ2ZJLFFBQUksQ0FBSjtBQUNELEdBRkQsTUFFTyxJQUFJUCxNQUFNSyxHQUFWLEVBQWU7QUFDcEJFLFFBQUksQ0FBQ04sSUFBSUMsQ0FBTCxJQUFVSSxLQUFkO0FBQ0QsR0FGTSxNQUVBLElBQUlMLE1BQU1JLEdBQVYsRUFBZTtBQUNwQkUsUUFBSSxJQUFJLENBQUNMLElBQUlGLENBQUwsSUFBVU0sS0FBbEI7QUFDRCxHQUZNLE1BRUEsSUFBSUosTUFBTUcsR0FBVixFQUFlO0FBQ3BCRSxRQUFJLElBQUksQ0FBQ1AsSUFBSUMsQ0FBTCxJQUFVSyxLQUFsQjtBQUNEOztBQUVEQyxNQUFJSCxLQUFLRCxHQUFMLENBQVNJLElBQUksRUFBYixFQUFpQixHQUFqQixDQUFKO0FBQ0EsTUFBSUEsSUFBSSxDQUFSLEVBQVc7QUFDVEEsU0FBSyxHQUFMO0FBQ0Q7O0FBRURFLE1BQUksQ0FBQ04sTUFBTUUsR0FBUCxJQUFjLENBQWxCOztBQUVBLE1BQUlBLFFBQVFGLEdBQVosRUFBaUI7QUFDZkssUUFBSSxDQUFKO0FBQ0QsR0FGRCxNQUVPLElBQUlDLEtBQUssR0FBVCxFQUFjO0FBQ25CRCxRQUFJRixTQUFTRCxNQUFNRixHQUFmLENBQUo7QUFDRCxHQUZNLE1BRUE7QUFDTEssUUFBSUYsU0FBUyxJQUFJSCxHQUFKLEdBQVVFLEdBQW5CLENBQUo7QUFDRDs7QUFFRCxTQUFPLENBQUNELEtBQUtNLEtBQUwsQ0FBV0gsQ0FBWCxDQUFELEVBQWdCSCxLQUFLTSxLQUFMLENBQVdGLElBQUksR0FBZixDQUFoQixFQUFxQ0osS0FBS00sS0FBTCxDQUFXRCxJQUFJLEdBQWYsQ0FBckMsQ0FBUDtBQUNELENBcENNIiwiZmlsZSI6Ii4vc3JjL2dldEhTTEZyb21SR0IuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG4vKipcbiAqIFtkZXNjcmlwdGlvbl1cbiAqIEBwYXJhbSAge1t0eXBlXX0gcmdiIFtkZXNjcmlwdGlvbl1cbiAqIEByZXR1cm4ge1t0eXBlXX0gICAgIFtkZXNjcmlwdGlvbl1cbiAqL1xuZXhwb3J0IGNvbnN0IGdldEhTTEZyb21SR0IgPSAocmdiKSA9PiB7XG4gIGNvbnN0IHIgPSByZ2JbMF0gLyAyNTU7XG4gIGNvbnN0IGcgPSByZ2JbMV0gLyAyNTU7XG4gIGNvbnN0IGIgPSByZ2JbMl0gLyAyNTU7XG5cbiAgY29uc3QgbWluID0gTWF0aC5taW4ocixnLGIpO1xuICBjb25zdCBtYXggPSBNYXRoLm1heChyLGcsYik7XG4gIGNvbnN0IGRlbHRhID0gbWF4IC0gbWluO1xuICBsZXQgaCwgcywgbDtcblxuICBpZiAobWF4ID09PSBtaW4pIHtcbiAgICBoID0gMDtcbiAgfSBlbHNlIGlmIChyID09PSBtYXgpIHtcbiAgICBoID0gKGcgLSBiKSAvIGRlbHRhO1xuICB9IGVsc2UgaWYgKGcgPT09IG1heCkge1xuICAgIGggPSAyICsgKGIgLSByKSAvIGRlbHRhO1xuICB9IGVsc2UgaWYgKGIgPT09IG1heCkge1xuICAgIGggPSA0ICsgKHIgLSBnKSAvIGRlbHRhO1xuICB9XG5cbiAgaCA9IE1hdGgubWluKGggKiA2MCwgMzYwKTtcbiAgaWYgKGggPCAwKSB7XG4gICAgaCArPSAzNjA7XG4gIH1cblxuICBsID0gKG1pbiArIG1heCkgLyAyO1xuXG4gIGlmIChtYXggPT09IG1pbikge1xuICAgIHMgPSAwO1xuICB9IGVsc2UgaWYgKGwgPD0gMC41KSB7XG4gICAgcyA9IGRlbHRhIC8gKG1heCArIG1pbik7XG4gIH0gZWxzZSB7XG4gICAgcyA9IGRlbHRhIC8gKDIgLSBtaW4gLSBtYXgpO1xuICB9XG5cbiAgcmV0dXJuIFtNYXRoLnJvdW5kKGgpLCBNYXRoLnJvdW5kKHMgKiAxMDApLCBNYXRoLnJvdW5kKGwgKiAxMDApXTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getHSLFromRGB.js\n");
 
 /***/ }),
 
@@ -292,26 +161,7 @@ var getHSLFromRGB = exports.getHSLFromRGB = function getHSLFromRGB(rgb) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getHexFromHSL = undefined;
-
-var _getRGBFromHSL = __webpack_require__(/*! ./getRGBFromHSL */ "./src/getRGBFromHSL.js");
-
-var _getHexFromRGB = __webpack_require__(/*! ./getHexFromRGB */ "./src/getHexFromRGB.js");
-
-/**
- * [description]
- * @param  {[type]} hsl [description]
- * @return {[type]}     [description]
- */
-var getHexFromHSL = exports.getHexFromHSL = function getHexFromHSL(hsl) {
-  var rgb = (0, _getRGBFromHSL.getRGBFromHSL)(hsl);
-  return (0, _getHexFromRGB.getHexFromRGB)(rgb);
-};
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getHexFromHSL = undefined;\n\nvar _getRGBFromHSL = __webpack_require__(/*! ./getRGBFromHSL */ \"./src/getRGBFromHSL.js\");\n\nvar _getHexFromRGB = __webpack_require__(/*! ./getHexFromRGB */ \"./src/getHexFromRGB.js\");\n\n/**\n * [description]\n * @param  {[type]} hsl [description]\n * @return {[type]}     [description]\n */\nvar getHexFromHSL = exports.getHexFromHSL = function getHexFromHSL(hsl) {\n  var rgb = (0, _getRGBFromHSL.getRGBFromHSL)(hsl);\n  return (0, _getHexFromRGB.getHexFromRGB)(rgb);\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldEhleEZyb21IU0wuanM/Y2M2NCJdLCJuYW1lcyI6WyJnZXRIZXhGcm9tSFNMIiwiaHNsIiwicmdiIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7OztBQUNBOztBQUNBOztBQUVBOzs7OztBQUtPLElBQU1BLHdDQUFnQixTQUFoQkEsYUFBZ0IsQ0FBQ0MsR0FBRCxFQUFTO0FBQ3BDLE1BQU1DLE1BQU0sa0NBQWNELEdBQWQsQ0FBWjtBQUNBLFNBQU8sa0NBQWNDLEdBQWQsQ0FBUDtBQUNELENBSE0iLCJmaWxlIjoiLi9zcmMvZ2V0SGV4RnJvbUhTTC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcbmltcG9ydCB7IGdldFJHQkZyb21IU0wgfSBmcm9tICcuL2dldFJHQkZyb21IU0wnO1xuaW1wb3J0IHsgZ2V0SGV4RnJvbVJHQiB9IGZyb20gJy4vZ2V0SGV4RnJvbVJHQic7XG5cbi8qKlxuICogW2Rlc2NyaXB0aW9uXVxuICogQHBhcmFtICB7W3R5cGVdfSBoc2wgW2Rlc2NyaXB0aW9uXVxuICogQHJldHVybiB7W3R5cGVdfSAgICAgW2Rlc2NyaXB0aW9uXVxuICovXG5leHBvcnQgY29uc3QgZ2V0SGV4RnJvbUhTTCA9IChoc2wpID0+IHtcbiAgY29uc3QgcmdiID0gZ2V0UkdCRnJvbUhTTChoc2wpO1xuICByZXR1cm4gZ2V0SGV4RnJvbVJHQihyZ2IpO1xufSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getHexFromHSL.js\n");
 
 /***/ }),
 
@@ -323,29 +173,7 @@ var getHexFromHSL = exports.getHexFromHSL = function getHexFromHSL(hsl) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getHexFromName = undefined;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _namedColours = __webpack_require__(/*! ./lib/namedColours */ "./src/lib/namedColours.js");
-
-/**
- * [description]
- * @param  {[type]} name [description]
- * @return {[type]}     [description]
- */
-var getHexFromName = exports.getHexFromName = function getHexFromName(name) {
-  if (_typeof(_namedColours.namedColours[name.toLowerCase()]) !== undefined) {
-    return _namedColours.namedColours[name.toLowerCase()];
-  }
-
-  return false;
-};
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getHexFromName = undefined;\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar _namedColours = __webpack_require__(/*! ./lib/namedColours */ \"./src/lib/namedColours.js\");\n\n/**\n * [description]\n * @param  {[type]} name [description]\n * @return {[type]}     [description]\n */\nvar getHexFromName = exports.getHexFromName = function getHexFromName(name) {\n  if (_typeof(_namedColours.namedColours[name.toLowerCase()]) !== undefined) {\n    return _namedColours.namedColours[name.toLowerCase()].toUpperCase();\n  }\n\n  return false;\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldEhleEZyb21OYW1lLmpzPzA0ZWUiXSwibmFtZXMiOlsiZ2V0SGV4RnJvbU5hbWUiLCJuYW1lIiwidG9Mb3dlckNhc2UiLCJ1bmRlZmluZWQiLCJ0b1VwcGVyQ2FzZSJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OztBQUNBOztBQUVBOzs7OztBQUtPLElBQU1BLDBDQUFpQixTQUFqQkEsY0FBaUIsQ0FBQ0MsSUFBRCxFQUFVO0FBQ3RDLE1BQUksUUFBTywyQkFBYUEsS0FBS0MsV0FBTCxFQUFiLENBQVAsTUFBNENDLFNBQWhELEVBQTJEO0FBQ3pELFdBQU8sMkJBQWFGLEtBQUtDLFdBQUwsRUFBYixFQUFpQ0UsV0FBakMsRUFBUDtBQUNEOztBQUVELFNBQU8sS0FBUDtBQUNELENBTk0iLCJmaWxlIjoiLi9zcmMvZ2V0SGV4RnJvbU5hbWUuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5pbXBvcnQgeyBuYW1lZENvbG91cnMgfSBmcm9tICcuL2xpYi9uYW1lZENvbG91cnMnO1xuXG4vKipcbiAqIFtkZXNjcmlwdGlvbl1cbiAqIEBwYXJhbSAge1t0eXBlXX0gbmFtZSBbZGVzY3JpcHRpb25dXG4gKiBAcmV0dXJuIHtbdHlwZV19ICAgICBbZGVzY3JpcHRpb25dXG4gKi9cbmV4cG9ydCBjb25zdCBnZXRIZXhGcm9tTmFtZSA9IChuYW1lKSA9PiB7XG4gIGlmICh0eXBlb2YgbmFtZWRDb2xvdXJzW25hbWUudG9Mb3dlckNhc2UoKV0gIT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiBuYW1lZENvbG91cnNbbmFtZS50b0xvd2VyQ2FzZSgpXS50b1VwcGVyQ2FzZSgpO1xuICB9XG5cbiAgcmV0dXJuIGZhbHNlO1xufSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getHexFromName.js\n");
 
 /***/ }),
 
@@ -357,27 +185,7 @@ var getHexFromName = exports.getHexFromName = function getHexFromName(name) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} rgb [description]
- * @return {[type]}     [description]
- */
-var getHexFromRGB = exports.getHexFromRGB = function getHexFromRGB(rgb) {
-  var hex = [Number(rgb[0]).toString(16), Number(rgb[1]).toString(16), Number(rgb[2]).toString(16)];
-
-  for (var i = 0; i < 3; i++) {
-    if (hex[i] < 10 || hex[i].length === 1) {
-      hex[i] = '0' + hex[i];
-    }
-  }
-
-  return '#' + hex.join('').toUpperCase();
-};
+eval("\n/**\n * [description]\n * @param  {[type]} rgb [description]\n * @return {[type]}     [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getHexFromRGB = exports.getHexFromRGB = function getHexFromRGB(rgb) {\n  var hex = [Number(rgb[0]).toString(16), Number(rgb[1]).toString(16), Number(rgb[2]).toString(16)];\n\n  for (var i = 0; i < 3; i++) {\n    if (hex[i] < 10 || hex[i].length === 1) {\n      hex[i] = '0' + hex[i];\n    }\n  }\n\n  return '#' + hex.join('').toUpperCase();\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldEhleEZyb21SR0IuanM/NDZhOCJdLCJuYW1lcyI6WyJnZXRIZXhGcm9tUkdCIiwicmdiIiwiaGV4IiwiTnVtYmVyIiwidG9TdHJpbmciLCJpIiwibGVuZ3RoIiwiam9pbiIsInRvVXBwZXJDYXNlIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOzs7Ozs7Ozs7QUFLTyxJQUFNQSx3Q0FBZ0IsU0FBaEJBLGFBQWdCLENBQUNDLEdBQUQsRUFBUztBQUNwQyxNQUFNQyxNQUFNLENBQ1ZDLE9BQU9GLElBQUksQ0FBSixDQUFQLEVBQWVHLFFBQWYsQ0FBd0IsRUFBeEIsQ0FEVSxFQUVWRCxPQUFPRixJQUFJLENBQUosQ0FBUCxFQUFlRyxRQUFmLENBQXdCLEVBQXhCLENBRlUsRUFHVkQsT0FBT0YsSUFBSSxDQUFKLENBQVAsRUFBZUcsUUFBZixDQUF3QixFQUF4QixDQUhVLENBQVo7O0FBTUEsT0FBSyxJQUFJQyxJQUFJLENBQWIsRUFBZ0JBLElBQUksQ0FBcEIsRUFBdUJBLEdBQXZCLEVBQTRCO0FBQzFCLFFBQUlILElBQUlHLENBQUosSUFBUyxFQUFULElBQWVILElBQUlHLENBQUosRUFBT0MsTUFBUCxLQUFrQixDQUFyQyxFQUF3QztBQUN0Q0osVUFBSUcsQ0FBSixVQUFjSCxJQUFJRyxDQUFKLENBQWQ7QUFDRDtBQUNGOztBQUVELGVBQVlILElBQUlLLElBQUosQ0FBUyxFQUFULEVBQWFDLFdBQWIsRUFBWjtBQUNELENBZE0iLCJmaWxlIjoiLi9zcmMvZ2V0SGV4RnJvbVJHQi5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0Jztcbi8qKlxuICogW2Rlc2NyaXB0aW9uXVxuICogQHBhcmFtICB7W3R5cGVdfSByZ2IgW2Rlc2NyaXB0aW9uXVxuICogQHJldHVybiB7W3R5cGVdfSAgICAgW2Rlc2NyaXB0aW9uXVxuICovXG5leHBvcnQgY29uc3QgZ2V0SGV4RnJvbVJHQiA9IChyZ2IpID0+IHtcbiAgY29uc3QgaGV4ID0gW1xuICAgIE51bWJlcihyZ2JbMF0pLnRvU3RyaW5nKDE2KSxcbiAgICBOdW1iZXIocmdiWzFdKS50b1N0cmluZygxNiksXG4gICAgTnVtYmVyKHJnYlsyXSkudG9TdHJpbmcoMTYpLFxuICBdO1xuXG4gIGZvciAobGV0IGkgPSAwOyBpIDwgMzsgaSsrKSB7XG4gICAgaWYgKGhleFtpXSA8IDEwIHx8IGhleFtpXS5sZW5ndGggPT09IDEpIHtcbiAgICAgIGhleFtpXSA9IGAwJHsgaGV4W2ldIH1gO1xuICAgIH1cbiAgfVxuXG4gIHJldHVybiBgIyR7IGhleC5qb2luKCcnKS50b1VwcGVyQ2FzZSgpIH1gO1xufSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getHexFromRGB.js\n");
 
 /***/ }),
 
@@ -389,51 +197,7 @@ var getHexFromRGB = exports.getHexFromRGB = function getHexFromRGB(rgb) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} hsl [description]
- * @return {[type]}     [description]
- */
-var getRGBFromHSL = exports.getRGBFromHSL = function getRGBFromHSL(hsl) {
-  var h = hsl[0] / 360;
-  var s = hsl[1] / 100;
-  var l = hsl[2] / 100;
-
-  if (s == 0) {
-    return [l, l, l];
-  }
-
-  var temp2 = l < 0.5 ? l * (1 + s) : l + s - l * s;
-  var temp1 = 2 * l - temp2;
-
-  var rtemp = (h + 1 / 3) % 1;
-  var gtemp = h;
-  var btemp = (h + 2 / 3) % 1;
-  var rgb = [rtemp, gtemp, btemp];
-
-  var value = void 0;
-
-  for (var i = 0; i < 3; ++i) {
-    if (rgb[i] < 1 / 6) {
-      value = temp1 + (temp2 - temp1) * 6 * rgb[i];
-    } else if (rgb[i] < 1 / 2) {
-      value = temp2;
-    } else if (rgb[i] < 2 / 3) {
-      value = temp1 + (temp2 - temp1) * 6 * (2 / 3 - rgb[i]);
-    } else {
-      value = temp1;
-    }
-
-    rgb[i] = value * 255;
-  }
-
-  return rgb;
-};
+eval("\n/**\n * [description]\n * @param  {[type]} hsl [description]\n * @return {[type]}     [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getRGBFromHSL = exports.getRGBFromHSL = function getRGBFromHSL(hsl) {\n  var h = hsl[0] / 360;\n  var s = hsl[1] / 100;\n  var l = hsl[2] / 100;\n\n  if (s == 0) {\n    return [l, l, l];\n  }\n\n  var temp2 = l < 0.5 ? l * (1 + s) : l + s - l * s;\n  var temp1 = 2 * l - temp2;\n\n  var rtemp = (h + 1 / 3) % 1;\n  var gtemp = h;\n  var btemp = (h + 2 / 3) % 1;\n  var rgb = [rtemp, gtemp, btemp];\n\n  var value = void 0;\n\n  for (var i = 0; i < 3; ++i) {\n    if (rgb[i] < 1 / 6) {\n      value = temp1 + (temp2 - temp1) * 6 * rgb[i];\n    } else if (rgb[i] < 1 / 2) {\n      value = temp2;\n    } else if (rgb[i] < 2 / 3) {\n      value = temp1 + (temp2 - temp1) * 6 * (2 / 3 - rgb[i]);\n    } else {\n      value = temp1;\n    }\n\n    rgb[i] = value * 255;\n  }\n\n  return rgb;\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldFJHQkZyb21IU0wuanM/ZTM4YiJdLCJuYW1lcyI6WyJnZXRSR0JGcm9tSFNMIiwiaHNsIiwiaCIsInMiLCJsIiwidGVtcDIiLCJ0ZW1wMSIsInJ0ZW1wIiwiZ3RlbXAiLCJidGVtcCIsInJnYiIsInZhbHVlIiwiaSJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTs7Ozs7Ozs7O0FBS08sSUFBTUEsd0NBQWdCLFNBQWhCQSxhQUFnQixDQUFDQyxHQUFELEVBQVM7QUFDcEMsTUFBTUMsSUFBSUQsSUFBSSxDQUFKLElBQVMsR0FBbkI7QUFDQSxNQUFNRSxJQUFJRixJQUFJLENBQUosSUFBUyxHQUFuQjtBQUNBLE1BQU1HLElBQUlILElBQUksQ0FBSixJQUFTLEdBQW5COztBQUVBLE1BQUlFLEtBQUssQ0FBVCxFQUFZO0FBQ1YsV0FBTyxDQUFDQyxDQUFELEVBQUlBLENBQUosRUFBT0EsQ0FBUCxDQUFQO0FBQ0Q7O0FBRUQsTUFBSUMsUUFBUUQsSUFBSSxHQUFKLEdBQVVBLEtBQUssSUFBSUQsQ0FBVCxDQUFWLEdBQXdCQyxJQUFJRCxDQUFKLEdBQVFDLElBQUlELENBQWhEO0FBQ0EsTUFBSUcsUUFBUSxJQUFJRixDQUFKLEdBQVFDLEtBQXBCOztBQUVBLE1BQU1FLFFBQVEsQ0FBQ0wsSUFBSSxJQUFJLENBQVQsSUFBYyxDQUE1QjtBQUNBLE1BQU1NLFFBQVFOLENBQWQ7QUFDQSxNQUFNTyxRQUFRLENBQUNQLElBQUksSUFBSSxDQUFULElBQWMsQ0FBNUI7QUFDQSxNQUFNUSxNQUFNLENBQUNILEtBQUQsRUFBUUMsS0FBUixFQUFlQyxLQUFmLENBQVo7O0FBRUEsTUFBSUUsY0FBSjs7QUFFQSxPQUFLLElBQUlDLElBQUksQ0FBYixFQUFnQkEsSUFBSSxDQUFwQixFQUF1QixFQUFFQSxDQUF6QixFQUE0QjtBQUMxQixRQUFJRixJQUFJRSxDQUFKLElBQVMsSUFBSSxDQUFqQixFQUFvQjtBQUNsQkQsY0FBUUwsUUFBUSxDQUFDRCxRQUFRQyxLQUFULElBQWtCLENBQWxCLEdBQXNCSSxJQUFJRSxDQUFKLENBQXRDO0FBQ0QsS0FGRCxNQUVPLElBQUlGLElBQUlFLENBQUosSUFBUyxJQUFJLENBQWpCLEVBQW9CO0FBQ3pCRCxjQUFRTixLQUFSO0FBQ0QsS0FGTSxNQUVBLElBQUlLLElBQUlFLENBQUosSUFBUyxJQUFJLENBQWpCLEVBQW9CO0FBQ3pCRCxjQUFRTCxRQUFRLENBQUNELFFBQVFDLEtBQVQsSUFBa0IsQ0FBbEIsSUFBdUIsSUFBSSxDQUFKLEdBQVFJLElBQUlFLENBQUosQ0FBL0IsQ0FBaEI7QUFDRCxLQUZNLE1BRUE7QUFDTEQsY0FBUUwsS0FBUjtBQUNEOztBQUVESSxRQUFJRSxDQUFKLElBQVNELFFBQVEsR0FBakI7QUFDRDs7QUFFRCxTQUFPRCxHQUFQO0FBQ0QsQ0FsQ00iLCJmaWxlIjoiLi9zcmMvZ2V0UkdCRnJvbUhTTC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0Jztcbi8qKlxuICogW2Rlc2NyaXB0aW9uXVxuICogQHBhcmFtICB7W3R5cGVdfSBoc2wgW2Rlc2NyaXB0aW9uXVxuICogQHJldHVybiB7W3R5cGVdfSAgICAgW2Rlc2NyaXB0aW9uXVxuICovXG5leHBvcnQgY29uc3QgZ2V0UkdCRnJvbUhTTCA9IChoc2wpID0+IHtcbiAgY29uc3QgaCA9IGhzbFswXSAvIDM2MDtcbiAgY29uc3QgcyA9IGhzbFsxXSAvIDEwMDtcbiAgY29uc3QgbCA9IGhzbFsyXSAvIDEwMDtcblxuICBpZiAocyA9PSAwKSB7XG4gICAgcmV0dXJuIFtsLCBsLCBsXTtcbiAgfVxuXG4gIHZhciB0ZW1wMiA9IGwgPCAwLjUgPyBsICogKDEgKyBzKSA6IGwgKyBzIC0gbCAqIHM7XG4gIHZhciB0ZW1wMSA9IDIgKiBsIC0gdGVtcDI7XG5cbiAgY29uc3QgcnRlbXAgPSAoaCArIDEgLyAzKSAlIDE7XG4gIGNvbnN0IGd0ZW1wID0gaDtcbiAgY29uc3QgYnRlbXAgPSAoaCArIDIgLyAzKSAlIDE7XG4gIGNvbnN0IHJnYiA9IFtydGVtcCwgZ3RlbXAsIGJ0ZW1wXTtcblxuICBsZXQgdmFsdWU7XG5cbiAgZm9yIChsZXQgaSA9IDA7IGkgPCAzOyArK2kpIHtcbiAgICBpZiAocmdiW2ldIDwgMSAvIDYpIHtcbiAgICAgIHZhbHVlID0gdGVtcDEgKyAodGVtcDIgLSB0ZW1wMSkgKiA2ICogcmdiW2ldO1xuICAgIH0gZWxzZSBpZiAocmdiW2ldIDwgMSAvIDIpIHtcbiAgICAgIHZhbHVlID0gdGVtcDI7XG4gICAgfSBlbHNlIGlmIChyZ2JbaV0gPCAyIC8gMykge1xuICAgICAgdmFsdWUgPSB0ZW1wMSArICh0ZW1wMiAtIHRlbXAxKSAqIDYgKiAoMiAvIDMgLSByZ2JbaV0pO1xuICAgIH0gZWxzZSB7XG4gICAgICB2YWx1ZSA9IHRlbXAxO1xuICAgIH1cblxuICAgIHJnYltpXSA9IHZhbHVlICogMjU1O1xuICB9XG5cbiAgcmV0dXJuIHJnYjtcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/getRGBFromHSL.js\n");
 
 /***/ }),
 
@@ -445,24 +209,7 @@ var getRGBFromHSL = exports.getRGBFromHSL = function getRGBFromHSL(hsl) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} hex [description]
- * @return {[type]}     [description]
- */
-var getRGBFromHex = exports.getRGBFromHex = function getRGBFromHex(hex) {
-  hex = hex.replace(/^#/, '');
-  if (hex.length === 3) {
-    hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
-  }
-  var num = parseInt(hex, 16);
-  return [num >> 16, num >> 8 & 255, num & 255];
-};
+eval("\n/**\n * [description]\n * @param  {[type]} hex [description]\n * @return {[type]}     [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getRGBFromHex = exports.getRGBFromHex = function getRGBFromHex(hex) {\n  hex = hex.replace(/^#/, '');\n  if (hex.length === 3) {\n    hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];\n  }\n  var num = parseInt(hex, 16);\n  return [num >> 16, num >> 8 & 255, num & 255];\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldFJHQkZyb21IZXguanM/MmI5MSJdLCJuYW1lcyI6WyJnZXRSR0JGcm9tSGV4IiwiaGV4IiwicmVwbGFjZSIsImxlbmd0aCIsIm51bSIsInBhcnNlSW50Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOzs7Ozs7Ozs7QUFLTyxJQUFNQSx3Q0FBZ0IsU0FBaEJBLGFBQWdCLENBQUNDLEdBQUQsRUFBUztBQUNwQ0EsUUFBTUEsSUFBSUMsT0FBSixDQUFZLElBQVosRUFBa0IsRUFBbEIsQ0FBTjtBQUNBLE1BQUlELElBQUlFLE1BQUosS0FBZSxDQUFuQixFQUFzQjtBQUNwQkYsVUFBTUEsSUFBSSxDQUFKLElBQVNBLElBQUksQ0FBSixDQUFULEdBQWtCQSxJQUFJLENBQUosQ0FBbEIsR0FBMkJBLElBQUksQ0FBSixDQUEzQixHQUFvQ0EsSUFBSSxDQUFKLENBQXBDLEdBQTZDQSxJQUFJLENBQUosQ0FBbkQ7QUFDRDtBQUNELE1BQUlHLE1BQU1DLFNBQVNKLEdBQVQsRUFBYyxFQUFkLENBQVY7QUFDQSxTQUFPLENBQUNHLE9BQU8sRUFBUixFQUFZQSxPQUFPLENBQVAsR0FBVyxHQUF2QixFQUE0QkEsTUFBTSxHQUFsQyxDQUFQO0FBQ0QsQ0FQTSIsImZpbGUiOiIuL3NyYy9nZXRSR0JGcm9tSGV4LmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuLyoqXG4gKiBbZGVzY3JpcHRpb25dXG4gKiBAcGFyYW0gIHtbdHlwZV19IGhleCBbZGVzY3JpcHRpb25dXG4gKiBAcmV0dXJuIHtbdHlwZV19ICAgICBbZGVzY3JpcHRpb25dXG4gKi9cbmV4cG9ydCBjb25zdCBnZXRSR0JGcm9tSGV4ID0gKGhleCkgPT4ge1xuICBoZXggPSBoZXgucmVwbGFjZSgvXiMvLCAnJyk7XG4gIGlmIChoZXgubGVuZ3RoID09PSAzKSB7XG4gICAgaGV4ID0gaGV4WzBdICsgaGV4WzBdICsgaGV4WzFdICsgaGV4WzFdICsgaGV4WzJdICsgaGV4WzJdO1xuICB9XG4gIGxldCBudW0gPSBwYXJzZUludChoZXgsIDE2KTtcbiAgcmV0dXJuIFtudW0gPj4gMTYsIG51bSA+PiA4ICYgMjU1LCBudW0gJiAyNTVdO1xufSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getRGBFromHex.js\n");
 
 /***/ }),
 
@@ -474,19 +221,7 @@ var getRGBFromHex = exports.getRGBFromHex = function getRGBFromHex(hex) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * [description]
- * @param  {[type]} rgba [description]
- * @return {[type]}      [description]
- */
-var getRGBFromRGBA = exports.getRGBFromRGBA = function getRGBFromRGBA(rgba) {
-  return [rgba[0], rgba[1], rgba[2]];
-};
+eval("\n/**\n * [description]\n * @param  {[type]} rgba [description]\n * @return {[type]}      [description]\n */\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar getRGBFromRGBA = exports.getRGBFromRGBA = function getRGBFromRGBA(rgba) {\n  return [rgba[0], rgba[1], rgba[2]];\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2dldFJHQkZyb21SR0JBLmpzPzczNzUiXSwibmFtZXMiOlsiZ2V0UkdCRnJvbVJHQkEiLCJyZ2JhIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOzs7Ozs7Ozs7QUFLTyxJQUFNQSwwQ0FBaUIsU0FBakJBLGNBQWlCLENBQUNDLElBQUQsRUFBVTtBQUN0QyxTQUFPLENBQUNBLEtBQUssQ0FBTCxDQUFELEVBQVVBLEtBQUssQ0FBTCxDQUFWLEVBQW1CQSxLQUFLLENBQUwsQ0FBbkIsQ0FBUDtBQUNELENBRk0iLCJmaWxlIjoiLi9zcmMvZ2V0UkdCRnJvbVJHQkEuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG4vKipcbiAqIFtkZXNjcmlwdGlvbl1cbiAqIEBwYXJhbSAge1t0eXBlXX0gcmdiYSBbZGVzY3JpcHRpb25dXG4gKiBAcmV0dXJuIHtbdHlwZV19ICAgICAgW2Rlc2NyaXB0aW9uXVxuICovXG5leHBvcnQgY29uc3QgZ2V0UkdCRnJvbVJHQkEgPSAocmdiYSkgPT4ge1xuICByZXR1cm4gW3JnYmFbMF0sIHJnYmFbMV0sIHJnYmFbMl1dO1xufSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/getRGBFromRGBA.js\n");
 
 /***/ }),
 
@@ -498,62 +233,7 @@ var getRGBFromRGBA = exports.getRGBFromRGBA = function getRGBFromRGBA(rgba) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getCMYKFromHex = exports.getCMYKFromRGB = exports.getHexFromHSL = exports.getHSLFromHex = exports.getRGBFromHSL = exports.getHSLFromRGB = exports.getRGBFromHex = exports.getRGBFromRGBA = exports.getHexFromName = exports.getHexFromRGB = exports.getCSSFromRGBA = exports.getCSSFromRGB = undefined;
-
-var _getCSSFromRGB = __webpack_require__(/*! ./getCSSFromRGB */ "./src/getCSSFromRGB.js");
-
-var _getCSSFromRGBA = __webpack_require__(/*! ./getCSSFromRGBA */ "./src/getCSSFromRGBA.js");
-
-var _getHexFromRGB = __webpack_require__(/*! ./getHexFromRGB */ "./src/getHexFromRGB.js");
-
-var _getHexFromName = __webpack_require__(/*! ./getHexFromName */ "./src/getHexFromName.js");
-
-var _getRGBFromRGBA = __webpack_require__(/*! ./getRGBFromRGBA */ "./src/getRGBFromRGBA.js");
-
-var _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ "./src/getRGBFromHex.js");
-
-var _getHSLFromRGB = __webpack_require__(/*! ./getHSLFromRGB */ "./src/getHSLFromRGB.js");
-
-var _getRGBFromHSL = __webpack_require__(/*! ./getRGBFromHSL */ "./src/getRGBFromHSL.js");
-
-var _getHSLFromHex = __webpack_require__(/*! ./getHSLFromHex */ "./src/getHSLFromHex.js");
-
-var _getHexFromHSL = __webpack_require__(/*! ./getHexFromHSL */ "./src/getHexFromHSL.js");
-
-var _getCMYKFromRGB = __webpack_require__(/*! ./getCMYKFromRGB */ "./src/getCMYKFromRGB.js");
-
-var _getCMYKFromHex = __webpack_require__(/*! ./getCMYKFromHex */ "./src/getCMYKFromHex.js");
-
-exports.getCSSFromRGB = _getCSSFromRGB.getCSSFromRGB;
-exports.getCSSFromRGBA = _getCSSFromRGBA.getCSSFromRGBA;
-exports.getHexFromRGB = _getHexFromRGB.getHexFromRGB;
-exports.getHexFromName = _getHexFromName.getHexFromName;
-exports.getRGBFromRGBA = _getRGBFromRGBA.getRGBFromRGBA;
-exports.getRGBFromHex = _getRGBFromHex.getRGBFromHex;
-exports.getHSLFromRGB = _getHSLFromRGB.getHSLFromRGB;
-exports.getRGBFromHSL = _getRGBFromHSL.getRGBFromHSL;
-exports.getHSLFromHex = _getHSLFromHex.getHSLFromHex;
-exports.getHexFromHSL = _getHexFromHSL.getHexFromHSL;
-exports.getCMYKFromRGB = _getCMYKFromRGB.getCMYKFromRGB;
-exports.getCMYKFromHex = _getCMYKFromHex.getCMYKFromHex;
-exports.default = {
-  getCSSFromRGB: _getCSSFromRGB.getCSSFromRGB,
-  getCSSFromRGBA: _getCSSFromRGBA.getCSSFromRGBA,
-  getHexFromRGB: _getHexFromRGB.getHexFromRGB,
-  getRGBFromRGBA: _getRGBFromRGBA.getRGBFromRGBA,
-  getRGBFromHex: _getRGBFromHex.getRGBFromHex,
-  getHSLFromRGB: _getHSLFromRGB.getHSLFromRGB,
-  getRGBFromHSL: _getRGBFromHSL.getRGBFromHSL,
-  getHSLFromHex: _getHSLFromHex.getHSLFromHex,
-  getHexFromHSL: _getHexFromHSL.getHexFromHSL,
-  getCMYKFromRGB: _getCMYKFromRGB.getCMYKFromRGB,
-  getCMYKFromHex: _getCMYKFromHex.getCMYKFromHex
-};
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getCMYKFromHex = exports.getCMYKFromRGB = exports.getHexFromHSL = exports.getHSLFromHex = exports.getRGBFromHSL = exports.getHSLFromRGB = exports.getRGBFromHex = exports.getRGBFromRGBA = exports.getHexFromName = exports.getHexFromRGB = exports.getCSSFromRGBA = exports.getCSSFromRGB = undefined;\n\nvar _getCSSFromRGB = __webpack_require__(/*! ./getCSSFromRGB */ \"./src/getCSSFromRGB.js\");\n\nvar _getCSSFromRGBA = __webpack_require__(/*! ./getCSSFromRGBA */ \"./src/getCSSFromRGBA.js\");\n\nvar _getHexFromRGB = __webpack_require__(/*! ./getHexFromRGB */ \"./src/getHexFromRGB.js\");\n\nvar _getHexFromName = __webpack_require__(/*! ./getHexFromName */ \"./src/getHexFromName.js\");\n\nvar _getRGBFromRGBA = __webpack_require__(/*! ./getRGBFromRGBA */ \"./src/getRGBFromRGBA.js\");\n\nvar _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ \"./src/getRGBFromHex.js\");\n\nvar _getHSLFromRGB = __webpack_require__(/*! ./getHSLFromRGB */ \"./src/getHSLFromRGB.js\");\n\nvar _getRGBFromHSL = __webpack_require__(/*! ./getRGBFromHSL */ \"./src/getRGBFromHSL.js\");\n\nvar _getHSLFromHex = __webpack_require__(/*! ./getHSLFromHex */ \"./src/getHSLFromHex.js\");\n\nvar _getHexFromHSL = __webpack_require__(/*! ./getHexFromHSL */ \"./src/getHexFromHSL.js\");\n\nvar _getCMYKFromRGB = __webpack_require__(/*! ./getCMYKFromRGB */ \"./src/getCMYKFromRGB.js\");\n\nvar _getCMYKFromHex = __webpack_require__(/*! ./getCMYKFromHex */ \"./src/getCMYKFromHex.js\");\n\nexports.getCSSFromRGB = _getCSSFromRGB.getCSSFromRGB;\nexports.getCSSFromRGBA = _getCSSFromRGBA.getCSSFromRGBA;\nexports.getHexFromRGB = _getHexFromRGB.getHexFromRGB;\nexports.getHexFromName = _getHexFromName.getHexFromName;\nexports.getRGBFromRGBA = _getRGBFromRGBA.getRGBFromRGBA;\nexports.getRGBFromHex = _getRGBFromHex.getRGBFromHex;\nexports.getHSLFromRGB = _getHSLFromRGB.getHSLFromRGB;\nexports.getRGBFromHSL = _getRGBFromHSL.getRGBFromHSL;\nexports.getHSLFromHex = _getHSLFromHex.getHSLFromHex;\nexports.getHexFromHSL = _getHexFromHSL.getHexFromHSL;\nexports.getCMYKFromRGB = _getCMYKFromRGB.getCMYKFromRGB;\nexports.getCMYKFromHex = _getCMYKFromHex.getCMYKFromHex;\nexports.default = {\n  getCSSFromRGB: _getCSSFromRGB.getCSSFromRGB,\n  getCSSFromRGBA: _getCSSFromRGBA.getCSSFromRGBA,\n  getHexFromRGB: _getHexFromRGB.getHexFromRGB,\n  getHexFromName: _getHexFromName.getHexFromName,\n  getRGBFromRGBA: _getRGBFromRGBA.getRGBFromRGBA,\n  getRGBFromHex: _getRGBFromHex.getRGBFromHex,\n  getHSLFromRGB: _getHSLFromRGB.getHSLFromRGB,\n  getRGBFromHSL: _getRGBFromHSL.getRGBFromHSL,\n  getHSLFromHex: _getHSLFromHex.getHSLFromHex,\n  getHexFromHSL: _getHexFromHSL.getHexFromHSL,\n  getCMYKFromRGB: _getCMYKFromRGB.getCMYKFromRGB,\n  getCMYKFromHex: _getCMYKFromHex.getCMYKFromHex\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2t3dWxlcnMuanM/ZjJkNCJdLCJuYW1lcyI6WyJnZXRDU1NGcm9tUkdCIiwiZ2V0Q1NTRnJvbVJHQkEiLCJnZXRIZXhGcm9tUkdCIiwiZ2V0SGV4RnJvbU5hbWUiLCJnZXRSR0JGcm9tUkdCQSIsImdldFJHQkZyb21IZXgiLCJnZXRIU0xGcm9tUkdCIiwiZ2V0UkdCRnJvbUhTTCIsImdldEhTTEZyb21IZXgiLCJnZXRIZXhGcm9tSFNMIiwiZ2V0Q01ZS0Zyb21SR0IiLCJnZXRDTVlLRnJvbUhleCJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7UUFHRUEsYTtRQUNBQyxjO1FBQ0FDLGE7UUFDQUMsYztRQUNBQyxjO1FBQ0FDLGE7UUFDQUMsYTtRQUNBQyxhO1FBQ0FDLGE7UUFDQUMsYTtRQUNBQyxjO1FBQ0FDLGM7a0JBR2E7QUFDYlgsNkNBRGE7QUFFYkMsZ0RBRmE7QUFHYkMsNkNBSGE7QUFJYkMsZ0RBSmE7QUFLYkMsZ0RBTGE7QUFNYkMsNkNBTmE7QUFPYkMsNkNBUGE7QUFRYkMsNkNBUmE7QUFTYkMsNkNBVGE7QUFVYkMsNkNBVmE7QUFXYkMsZ0RBWGE7QUFZYkM7QUFaYSxDIiwiZmlsZSI6Ii4vc3JjL2t3dWxlcnMuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5pbXBvcnQgeyBnZXRDU1NGcm9tUkdCIH0gZnJvbSAnLi9nZXRDU1NGcm9tUkdCJztcbmltcG9ydCB7IGdldENTU0Zyb21SR0JBIH0gZnJvbSAnLi9nZXRDU1NGcm9tUkdCQSc7XG5pbXBvcnQgeyBnZXRIZXhGcm9tUkdCIH0gZnJvbSAnLi9nZXRIZXhGcm9tUkdCJztcbmltcG9ydCB7IGdldEhleEZyb21OYW1lIH0gZnJvbSAnLi9nZXRIZXhGcm9tTmFtZSc7XG5pbXBvcnQgeyBnZXRSR0JGcm9tUkdCQSB9IGZyb20gJy4vZ2V0UkdCRnJvbVJHQkEnO1xuaW1wb3J0IHsgZ2V0UkdCRnJvbUhleCB9IGZyb20gJy4vZ2V0UkdCRnJvbUhleCc7XG5pbXBvcnQgeyBnZXRIU0xGcm9tUkdCIH0gZnJvbSAnLi9nZXRIU0xGcm9tUkdCJztcbmltcG9ydCB7IGdldFJHQkZyb21IU0wgfSBmcm9tICcuL2dldFJHQkZyb21IU0wnO1xuaW1wb3J0IHsgZ2V0SFNMRnJvbUhleCB9IGZyb20gJy4vZ2V0SFNMRnJvbUhleCc7XG5pbXBvcnQgeyBnZXRIZXhGcm9tSFNMIH0gZnJvbSAnLi9nZXRIZXhGcm9tSFNMJztcbmltcG9ydCB7IGdldENNWUtGcm9tUkdCIH0gZnJvbSAnLi9nZXRDTVlLRnJvbVJHQic7XG5pbXBvcnQgeyBnZXRDTVlLRnJvbUhleCB9IGZyb20gJy4vZ2V0Q01ZS0Zyb21IZXgnO1xuXG5leHBvcnQge1xuICBnZXRDU1NGcm9tUkdCLFxuICBnZXRDU1NGcm9tUkdCQSxcbiAgZ2V0SGV4RnJvbVJHQixcbiAgZ2V0SGV4RnJvbU5hbWUsXG4gIGdldFJHQkZyb21SR0JBLFxuICBnZXRSR0JGcm9tSGV4LFxuICBnZXRIU0xGcm9tUkdCLFxuICBnZXRSR0JGcm9tSFNMLFxuICBnZXRIU0xGcm9tSGV4LFxuICBnZXRIZXhGcm9tSFNMLFxuICBnZXRDTVlLRnJvbVJHQixcbiAgZ2V0Q01ZS0Zyb21IZXgsXG59O1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gIGdldENTU0Zyb21SR0IsXG4gIGdldENTU0Zyb21SR0JBLFxuICBnZXRIZXhGcm9tUkdCLFxuICBnZXRIZXhGcm9tTmFtZSxcbiAgZ2V0UkdCRnJvbVJHQkEsXG4gIGdldFJHQkZyb21IZXgsXG4gIGdldEhTTEZyb21SR0IsXG4gIGdldFJHQkZyb21IU0wsXG4gIGdldEhTTEZyb21IZXgsXG4gIGdldEhleEZyb21IU0wsXG4gIGdldENNWUtGcm9tUkdCLFxuICBnZXRDTVlLRnJvbUhleCxcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/kwulers.js\n");
 
 /***/ }),
 
@@ -565,157 +245,9 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var namedColours = exports.namedColours = {
-  "aliceblue": "#f0f8ff",
-  "antiquewhite": "#faebd7",
-  "aqua": "#00ffff",
-  "aquamarine": "#7fffd4",
-  "azure": "#f0ffff",
-  "beige": "#f5f5dc",
-  "bisque": "#ffe4c4",
-  "black": "#000000",
-  "blanchedalmond": "#ffebcd",
-  "blue": "#0000ff",
-  "blueviolet": "#8a2be2",
-  "brown": "#a52a2a",
-  "burlywood": "#deb887",
-  "cadetblue": "#5f9ea0",
-  "chartreuse": "#7fff00",
-  "chocolate": "#d2691e",
-  "coral": "#ff7f50",
-  "cornflowerblue": "#6495ed",
-  "cornsilk": "#fff8dc",
-  "crimson": "#dc143c",
-  "cyan": "#00ffff",
-  "darkblue": "#00008b",
-  "darkcyan": "#008b8b",
-  "darkgoldenrod": "#b8860b",
-  "darkgray": "#a9a9a9",
-  "darkgreen": "#006400",
-  "darkkhaki": "#bdb76b",
-  "darkmagenta": "#8b008b",
-  "darkolivegreen": "#556b2f",
-  "darkorange": "#ff8c00",
-  "darkorchid": "#9932cc",
-  "darkred": "#8b0000",
-  "darksalmon": "#e9967a",
-  "darkseagreen": "#8fbc8f",
-  "darkslateblue": "#483d8b",
-  "darkslategray": "#2f4f4f",
-  "darkturquoise": "#00ced1",
-  "darkviolet": "#9400d3",
-  "deeppink": "#ff1493",
-  "deepskyblue": "#00bfff",
-  "dimgray": "#696969",
-  "dodgerblue": "#1e90ff",
-  "firebrick": "#b22222",
-  "floralwhite": "#fffaf0",
-  "forestgreen": "#228b22",
-  "fuchsia": "#ff00ff",
-  "gainsboro": "#dcdcdc",
-  "ghostwhite": "#f8f8ff",
-  "gold": "#ffd700",
-  "goldenrod": "#daa520",
-  "gray": "#808080",
-  "green": "#008000",
-  "greenyellow": "#adff2f",
-  "honeydew": "#f0fff0",
-  "hotpink": "#ff69b4",
-  "indianred ": "#cd5c5c",
-  "indigo": "#4b0082",
-  "ivory": "#fffff0",
-  "khaki": "#f0e68c",
-  "lavender": "#e6e6fa",
-  "lavenderblush": "#fff0f5",
-  "lawngreen": "#7cfc00",
-  "lemonchiffon": "#fffacd",
-  "lightblue": "#add8e6",
-  "lightcoral": "#f08080",
-  "lightcyan": "#e0ffff",
-  "lightgoldenrodyellow": "#fafad2",
-  "lightgrey": "#d3d3d3",
-  "lightgreen": "#90ee90",
-  "lightpink": "#ffb6c1",
-  "lightsalmon": "#ffa07a",
-  "lightseagreen": "#20b2aa",
-  "lightskyblue": "#87cefa",
-  "lightslategray": "#778899",
-  "lightsteelblue": "#b0c4de",
-  "lightyellow": "#ffffe0",
-  "lime": "#00ff00",
-  "limegreen": "#32cd32",
-  "linen": "#faf0e6",
-  "magenta": "#ff00ff",
-  "maroon": "#800000",
-  "mediumaquamarine": "#66cdaa",
-  "mediumblue": "#0000cd",
-  "mediumorchid": "#ba55d3",
-  "mediumpurple": "#9370d8",
-  "mediumseagreen": "#3cb371",
-  "mediumslateblue": "#7b68ee",
-  "mediumspringgreen": "#00fa9a",
-  "mediumturquoise": "#48d1cc",
-  "mediumvioletred": "#c71585",
-  "midnightblue": "#191970",
-  "mintcream": "#f5fffa",
-  "mistyrose": "#ffe4e1",
-  "moccasin": "#ffe4b5",
-  "navajowhite": "#ffdead",
-  "navy": "#000080",
-  "oldlace": "#fdf5e6",
-  "olive": "#808000",
-  "olivedrab": "#6b8e23",
-  "orange": "#ffa500",
-  "orangered": "#ff4500",
-  "orchid": "#da70d6",
-  "palegoldenrod": "#eee8aa",
-  "palegreen": "#98fb98",
-  "paleturquoise": "#afeeee",
-  "palevioletred": "#d87093",
-  "papayawhip": "#ffefd5",
-  "peachpuff": "#ffdab9",
-  "peru": "#cd853f",
-  "pink": "#ffc0cb",
-  "plum": "#dda0dd",
-  "powderblue": "#b0e0e6",
-  "purple": "#800080",
-  "rebeccapurple": "#663399",
-  "red": "#ff0000",
-  "rosybrown": "#bc8f8f",
-  "royalblue": "#4169e1",
-  "saddlebrown": "#8b4513",
-  "salmon": "#fa8072",
-  "sandybrown": "#f4a460",
-  "seagreen": "#2e8b57",
-  "seashell": "#fff5ee",
-  "sienna": "#a0522d",
-  "silver": "#c0c0c0",
-  "skyblue": "#87ceeb",
-  "slateblue": "#6a5acd",
-  "slategray": "#708090",
-  "snow": "#fffafa",
-  "springgreen": "#00ff7f",
-  "steelblue": "#4682b4",
-  "tan": "#d2b48c",
-  "teal": "#008080",
-  "thistle": "#d8bfd8",
-  "tomato": "#ff6347",
-  "turquoise": "#40e0d0",
-  "violet": "#ee82ee",
-  "wheat": "#f5deb3",
-  "white": "#ffffff",
-  "whitesmoke": "#f5f5f5",
-  "yellow": "#ffff00",
-  "yellowgreen": "#9acd32"
-};
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar namedColours = exports.namedColours = {\n  \"aliceblue\": \"#f0f8ff\",\n  \"antiquewhite\": \"#faebd7\",\n  \"aqua\": \"#00ffff\",\n  \"aquamarine\": \"#7fffd4\",\n  \"azure\": \"#f0ffff\",\n  \"beige\": \"#f5f5dc\",\n  \"bisque\": \"#ffe4c4\",\n  \"black\": \"#000000\",\n  \"blanchedalmond\": \"#ffebcd\",\n  \"blue\": \"#0000ff\",\n  \"blueviolet\": \"#8a2be2\",\n  \"brown\": \"#a52a2a\",\n  \"burlywood\": \"#deb887\",\n  \"cadetblue\": \"#5f9ea0\",\n  \"chartreuse\": \"#7fff00\",\n  \"chocolate\": \"#d2691e\",\n  \"coral\": \"#ff7f50\",\n  \"cornflowerblue\": \"#6495ed\",\n  \"cornsilk\": \"#fff8dc\",\n  \"crimson\": \"#dc143c\",\n  \"cyan\": \"#00ffff\",\n  \"darkblue\": \"#00008b\",\n  \"darkcyan\": \"#008b8b\",\n  \"darkgoldenrod\": \"#b8860b\",\n  \"darkgray\": \"#a9a9a9\",\n  \"darkgreen\": \"#006400\",\n  \"darkkhaki\": \"#bdb76b\",\n  \"darkmagenta\": \"#8b008b\",\n  \"darkolivegreen\": \"#556b2f\",\n  \"darkorange\": \"#ff8c00\",\n  \"darkorchid\": \"#9932cc\",\n  \"darkred\": \"#8b0000\",\n  \"darksalmon\": \"#e9967a\",\n  \"darkseagreen\": \"#8fbc8f\",\n  \"darkslateblue\": \"#483d8b\",\n  \"darkslategray\": \"#2f4f4f\",\n  \"darkturquoise\": \"#00ced1\",\n  \"darkviolet\": \"#9400d3\",\n  \"deeppink\": \"#ff1493\",\n  \"deepskyblue\": \"#00bfff\",\n  \"dimgray\": \"#696969\",\n  \"dodgerblue\": \"#1e90ff\",\n  \"firebrick\": \"#b22222\",\n  \"floralwhite\": \"#fffaf0\",\n  \"forestgreen\": \"#228b22\",\n  \"fuchsia\": \"#ff00ff\",\n  \"gainsboro\": \"#dcdcdc\",\n  \"ghostwhite\": \"#f8f8ff\",\n  \"gold\": \"#ffd700\",\n  \"goldenrod\": \"#daa520\",\n  \"gray\": \"#808080\",\n  \"green\": \"#008000\",\n  \"greenyellow\": \"#adff2f\",\n  \"honeydew\": \"#f0fff0\",\n  \"hotpink\": \"#ff69b4\",\n  \"indianred \": \"#cd5c5c\",\n  \"indigo\": \"#4b0082\",\n  \"ivory\": \"#fffff0\",\n  \"khaki\": \"#f0e68c\",\n  \"lavender\": \"#e6e6fa\",\n  \"lavenderblush\": \"#fff0f5\",\n  \"lawngreen\": \"#7cfc00\",\n  \"lemonchiffon\": \"#fffacd\",\n  \"lightblue\": \"#add8e6\",\n  \"lightcoral\": \"#f08080\",\n  \"lightcyan\": \"#e0ffff\",\n  \"lightgoldenrodyellow\": \"#fafad2\",\n  \"lightgrey\": \"#d3d3d3\",\n  \"lightgreen\": \"#90ee90\",\n  \"lightpink\": \"#ffb6c1\",\n  \"lightsalmon\": \"#ffa07a\",\n  \"lightseagreen\": \"#20b2aa\",\n  \"lightskyblue\": \"#87cefa\",\n  \"lightslategray\": \"#778899\",\n  \"lightsteelblue\": \"#b0c4de\",\n  \"lightyellow\": \"#ffffe0\",\n  \"lime\": \"#00ff00\",\n  \"limegreen\": \"#32cd32\",\n  \"linen\": \"#faf0e6\",\n  \"magenta\": \"#ff00ff\",\n  \"maroon\": \"#800000\",\n  \"mediumaquamarine\": \"#66cdaa\",\n  \"mediumblue\": \"#0000cd\",\n  \"mediumorchid\": \"#ba55d3\",\n  \"mediumpurple\": \"#9370d8\",\n  \"mediumseagreen\": \"#3cb371\",\n  \"mediumslateblue\": \"#7b68ee\",\n  \"mediumspringgreen\": \"#00fa9a\",\n  \"mediumturquoise\": \"#48d1cc\",\n  \"mediumvioletred\": \"#c71585\",\n  \"midnightblue\": \"#191970\",\n  \"mintcream\": \"#f5fffa\",\n  \"mistyrose\": \"#ffe4e1\",\n  \"moccasin\": \"#ffe4b5\",\n  \"navajowhite\": \"#ffdead\",\n  \"navy\": \"#000080\",\n  \"oldlace\": \"#fdf5e6\",\n  \"olive\": \"#808000\",\n  \"olivedrab\": \"#6b8e23\",\n  \"orange\": \"#ffa500\",\n  \"orangered\": \"#ff4500\",\n  \"orchid\": \"#da70d6\",\n  \"palegoldenrod\": \"#eee8aa\",\n  \"palegreen\": \"#98fb98\",\n  \"paleturquoise\": \"#afeeee\",\n  \"palevioletred\": \"#d87093\",\n  \"papayawhip\": \"#ffefd5\",\n  \"peachpuff\": \"#ffdab9\",\n  \"peru\": \"#cd853f\",\n  \"pink\": \"#ffc0cb\",\n  \"plum\": \"#dda0dd\",\n  \"powderblue\": \"#b0e0e6\",\n  \"purple\": \"#800080\",\n  \"rebeccapurple\": \"#663399\",\n  \"red\": \"#ff0000\",\n  \"rosybrown\": \"#bc8f8f\",\n  \"royalblue\": \"#4169e1\",\n  \"saddlebrown\": \"#8b4513\",\n  \"salmon\": \"#fa8072\",\n  \"sandybrown\": \"#f4a460\",\n  \"seagreen\": \"#2e8b57\",\n  \"seashell\": \"#fff5ee\",\n  \"sienna\": \"#a0522d\",\n  \"silver\": \"#c0c0c0\",\n  \"skyblue\": \"#87ceeb\",\n  \"slateblue\": \"#6a5acd\",\n  \"slategray\": \"#708090\",\n  \"snow\": \"#fffafa\",\n  \"springgreen\": \"#00ff7f\",\n  \"steelblue\": \"#4682b4\",\n  \"tan\": \"#d2b48c\",\n  \"teal\": \"#008080\",\n  \"thistle\": \"#d8bfd8\",\n  \"tomato\": \"#ff6347\",\n  \"turquoise\": \"#40e0d0\",\n  \"violet\": \"#ee82ee\",\n  \"wheat\": \"#f5deb3\",\n  \"white\": \"#ffffff\",\n  \"whitesmoke\": \"#f5f5f5\",\n  \"yellow\": \"#ffff00\",\n  \"yellowgreen\": \"#9acd32\"\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rd3VsZXJzLy4vc3JjL2xpYi9uYW1lZENvbG91cnMuanM/Y2ZlNSJdLCJuYW1lcyI6WyJuYW1lZENvbG91cnMiXSwibWFwcGluZ3MiOiI7Ozs7O0FBQU8sSUFBTUEsc0NBQWU7QUFDMUIsZUFBYSxTQURhO0FBRTFCLGtCQUFnQixTQUZVO0FBRzFCLFVBQVEsU0FIa0I7QUFJMUIsZ0JBQWMsU0FKWTtBQUsxQixXQUFTLFNBTGlCO0FBTTFCLFdBQVMsU0FOaUI7QUFPMUIsWUFBVSxTQVBnQjtBQVExQixXQUFTLFNBUmlCO0FBUzFCLG9CQUFrQixTQVRRO0FBVTFCLFVBQVEsU0FWa0I7QUFXMUIsZ0JBQWMsU0FYWTtBQVkxQixXQUFTLFNBWmlCO0FBYTFCLGVBQWEsU0FiYTtBQWMxQixlQUFhLFNBZGE7QUFlMUIsZ0JBQWMsU0FmWTtBQWdCMUIsZUFBYSxTQWhCYTtBQWlCMUIsV0FBUyxTQWpCaUI7QUFrQjFCLG9CQUFrQixTQWxCUTtBQW1CMUIsY0FBWSxTQW5CYztBQW9CMUIsYUFBVyxTQXBCZTtBQXFCMUIsVUFBUSxTQXJCa0I7QUFzQjFCLGNBQVksU0F0QmM7QUF1QjFCLGNBQVksU0F2QmM7QUF3QjFCLG1CQUFpQixTQXhCUztBQXlCMUIsY0FBWSxTQXpCYztBQTBCMUIsZUFBYSxTQTFCYTtBQTJCMUIsZUFBYSxTQTNCYTtBQTRCMUIsaUJBQWUsU0E1Qlc7QUE2QjFCLG9CQUFrQixTQTdCUTtBQThCMUIsZ0JBQWMsU0E5Qlk7QUErQjFCLGdCQUFjLFNBL0JZO0FBZ0MxQixhQUFXLFNBaENlO0FBaUMxQixnQkFBYyxTQWpDWTtBQWtDMUIsa0JBQWdCLFNBbENVO0FBbUMxQixtQkFBaUIsU0FuQ1M7QUFvQzFCLG1CQUFpQixTQXBDUztBQXFDMUIsbUJBQWlCLFNBckNTO0FBc0MxQixnQkFBYyxTQXRDWTtBQXVDMUIsY0FBWSxTQXZDYztBQXdDMUIsaUJBQWUsU0F4Q1c7QUF5QzFCLGFBQVcsU0F6Q2U7QUEwQzFCLGdCQUFjLFNBMUNZO0FBMkMxQixlQUFhLFNBM0NhO0FBNEMxQixpQkFBZSxTQTVDVztBQTZDMUIsaUJBQWUsU0E3Q1c7QUE4QzFCLGFBQVcsU0E5Q2U7QUErQzFCLGVBQWEsU0EvQ2E7QUFnRDFCLGdCQUFjLFNBaERZO0FBaUQxQixVQUFRLFNBakRrQjtBQWtEMUIsZUFBYSxTQWxEYTtBQW1EMUIsVUFBUSxTQW5Ea0I7QUFvRDFCLFdBQVMsU0FwRGlCO0FBcUQxQixpQkFBZSxTQXJEVztBQXNEMUIsY0FBWSxTQXREYztBQXVEMUIsYUFBVyxTQXZEZTtBQXdEMUIsZ0JBQWMsU0F4RFk7QUF5RDFCLFlBQVUsU0F6RGdCO0FBMEQxQixXQUFTLFNBMURpQjtBQTJEMUIsV0FBUyxTQTNEaUI7QUE0RDFCLGNBQVksU0E1RGM7QUE2RDFCLG1CQUFpQixTQTdEUztBQThEMUIsZUFBYSxTQTlEYTtBQStEMUIsa0JBQWdCLFNBL0RVO0FBZ0UxQixlQUFhLFNBaEVhO0FBaUUxQixnQkFBYyxTQWpFWTtBQWtFMUIsZUFBYSxTQWxFYTtBQW1FMUIsMEJBQXdCLFNBbkVFO0FBb0UxQixlQUFhLFNBcEVhO0FBcUUxQixnQkFBYyxTQXJFWTtBQXNFMUIsZUFBYSxTQXRFYTtBQXVFMUIsaUJBQWUsU0F2RVc7QUF3RTFCLG1CQUFpQixTQXhFUztBQXlFMUIsa0JBQWdCLFNBekVVO0FBMEUxQixvQkFBa0IsU0ExRVE7QUEyRTFCLG9CQUFrQixTQTNFUTtBQTRFMUIsaUJBQWUsU0E1RVc7QUE2RTFCLFVBQVEsU0E3RWtCO0FBOEUxQixlQUFhLFNBOUVhO0FBK0UxQixXQUFTLFNBL0VpQjtBQWdGMUIsYUFBVyxTQWhGZTtBQWlGMUIsWUFBVSxTQWpGZ0I7QUFrRjFCLHNCQUFvQixTQWxGTTtBQW1GMUIsZ0JBQWMsU0FuRlk7QUFvRjFCLGtCQUFnQixTQXBGVTtBQXFGMUIsa0JBQWdCLFNBckZVO0FBc0YxQixvQkFBa0IsU0F0RlE7QUF1RjFCLHFCQUFtQixTQXZGTztBQXdGMUIsdUJBQXFCLFNBeEZLO0FBeUYxQixxQkFBbUIsU0F6Rk87QUEwRjFCLHFCQUFtQixTQTFGTztBQTJGMUIsa0JBQWdCLFNBM0ZVO0FBNEYxQixlQUFhLFNBNUZhO0FBNkYxQixlQUFhLFNBN0ZhO0FBOEYxQixjQUFZLFNBOUZjO0FBK0YxQixpQkFBZSxTQS9GVztBQWdHMUIsVUFBUSxTQWhHa0I7QUFpRzFCLGFBQVcsU0FqR2U7QUFrRzFCLFdBQVMsU0FsR2lCO0FBbUcxQixlQUFhLFNBbkdhO0FBb0cxQixZQUFVLFNBcEdnQjtBQXFHMUIsZUFBYSxTQXJHYTtBQXNHMUIsWUFBVSxTQXRHZ0I7QUF1RzFCLG1CQUFpQixTQXZHUztBQXdHMUIsZUFBYSxTQXhHYTtBQXlHMUIsbUJBQWlCLFNBekdTO0FBMEcxQixtQkFBaUIsU0ExR1M7QUEyRzFCLGdCQUFjLFNBM0dZO0FBNEcxQixlQUFhLFNBNUdhO0FBNkcxQixVQUFRLFNBN0drQjtBQThHMUIsVUFBUSxTQTlHa0I7QUErRzFCLFVBQVEsU0EvR2tCO0FBZ0gxQixnQkFBYyxTQWhIWTtBQWlIMUIsWUFBVSxTQWpIZ0I7QUFrSDFCLG1CQUFpQixTQWxIUztBQW1IMUIsU0FBTyxTQW5IbUI7QUFvSDFCLGVBQWEsU0FwSGE7QUFxSDFCLGVBQWEsU0FySGE7QUFzSDFCLGlCQUFlLFNBdEhXO0FBdUgxQixZQUFVLFNBdkhnQjtBQXdIMUIsZ0JBQWMsU0F4SFk7QUF5SDFCLGNBQVksU0F6SGM7QUEwSDFCLGNBQVksU0ExSGM7QUEySDFCLFlBQVUsU0EzSGdCO0FBNEgxQixZQUFVLFNBNUhnQjtBQTZIMUIsYUFBVyxTQTdIZTtBQThIMUIsZUFBYSxTQTlIYTtBQStIMUIsZUFBYSxTQS9IYTtBQWdJMUIsVUFBUSxTQWhJa0I7QUFpSTFCLGlCQUFlLFNBaklXO0FBa0kxQixlQUFhLFNBbElhO0FBbUkxQixTQUFPLFNBbkltQjtBQW9JMUIsVUFBUSxTQXBJa0I7QUFxSTFCLGFBQVcsU0FySWU7QUFzSTFCLFlBQVUsU0F0SWdCO0FBdUkxQixlQUFhLFNBdklhO0FBd0kxQixZQUFVLFNBeElnQjtBQXlJMUIsV0FBUyxTQXpJaUI7QUEwSTFCLFdBQVMsU0ExSWlCO0FBMkkxQixnQkFBYyxTQTNJWTtBQTRJMUIsWUFBVSxTQTVJZ0I7QUE2STFCLGlCQUFlO0FBN0lXLENBQXJCIiwiZmlsZSI6Ii4vc3JjL2xpYi9uYW1lZENvbG91cnMuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgbmFtZWRDb2xvdXJzID0ge1xuICBcImFsaWNlYmx1ZVwiOiBcIiNmMGY4ZmZcIixcbiAgXCJhbnRpcXVld2hpdGVcIjogXCIjZmFlYmQ3XCIsXG4gIFwiYXF1YVwiOiBcIiMwMGZmZmZcIixcbiAgXCJhcXVhbWFyaW5lXCI6IFwiIzdmZmZkNFwiLFxuICBcImF6dXJlXCI6IFwiI2YwZmZmZlwiLFxuICBcImJlaWdlXCI6IFwiI2Y1ZjVkY1wiLFxuICBcImJpc3F1ZVwiOiBcIiNmZmU0YzRcIixcbiAgXCJibGFja1wiOiBcIiMwMDAwMDBcIixcbiAgXCJibGFuY2hlZGFsbW9uZFwiOiBcIiNmZmViY2RcIixcbiAgXCJibHVlXCI6IFwiIzAwMDBmZlwiLFxuICBcImJsdWV2aW9sZXRcIjogXCIjOGEyYmUyXCIsXG4gIFwiYnJvd25cIjogXCIjYTUyYTJhXCIsXG4gIFwiYnVybHl3b29kXCI6IFwiI2RlYjg4N1wiLFxuICBcImNhZGV0Ymx1ZVwiOiBcIiM1ZjllYTBcIixcbiAgXCJjaGFydHJldXNlXCI6IFwiIzdmZmYwMFwiLFxuICBcImNob2NvbGF0ZVwiOiBcIiNkMjY5MWVcIixcbiAgXCJjb3JhbFwiOiBcIiNmZjdmNTBcIixcbiAgXCJjb3JuZmxvd2VyYmx1ZVwiOiBcIiM2NDk1ZWRcIixcbiAgXCJjb3Juc2lsa1wiOiBcIiNmZmY4ZGNcIixcbiAgXCJjcmltc29uXCI6IFwiI2RjMTQzY1wiLFxuICBcImN5YW5cIjogXCIjMDBmZmZmXCIsXG4gIFwiZGFya2JsdWVcIjogXCIjMDAwMDhiXCIsXG4gIFwiZGFya2N5YW5cIjogXCIjMDA4YjhiXCIsXG4gIFwiZGFya2dvbGRlbnJvZFwiOiBcIiNiODg2MGJcIixcbiAgXCJkYXJrZ3JheVwiOiBcIiNhOWE5YTlcIixcbiAgXCJkYXJrZ3JlZW5cIjogXCIjMDA2NDAwXCIsXG4gIFwiZGFya2toYWtpXCI6IFwiI2JkYjc2YlwiLFxuICBcImRhcmttYWdlbnRhXCI6IFwiIzhiMDA4YlwiLFxuICBcImRhcmtvbGl2ZWdyZWVuXCI6IFwiIzU1NmIyZlwiLFxuICBcImRhcmtvcmFuZ2VcIjogXCIjZmY4YzAwXCIsXG4gIFwiZGFya29yY2hpZFwiOiBcIiM5OTMyY2NcIixcbiAgXCJkYXJrcmVkXCI6IFwiIzhiMDAwMFwiLFxuICBcImRhcmtzYWxtb25cIjogXCIjZTk5NjdhXCIsXG4gIFwiZGFya3NlYWdyZWVuXCI6IFwiIzhmYmM4ZlwiLFxuICBcImRhcmtzbGF0ZWJsdWVcIjogXCIjNDgzZDhiXCIsXG4gIFwiZGFya3NsYXRlZ3JheVwiOiBcIiMyZjRmNGZcIixcbiAgXCJkYXJrdHVycXVvaXNlXCI6IFwiIzAwY2VkMVwiLFxuICBcImRhcmt2aW9sZXRcIjogXCIjOTQwMGQzXCIsXG4gIFwiZGVlcHBpbmtcIjogXCIjZmYxNDkzXCIsXG4gIFwiZGVlcHNreWJsdWVcIjogXCIjMDBiZmZmXCIsXG4gIFwiZGltZ3JheVwiOiBcIiM2OTY5NjlcIixcbiAgXCJkb2RnZXJibHVlXCI6IFwiIzFlOTBmZlwiLFxuICBcImZpcmVicmlja1wiOiBcIiNiMjIyMjJcIixcbiAgXCJmbG9yYWx3aGl0ZVwiOiBcIiNmZmZhZjBcIixcbiAgXCJmb3Jlc3RncmVlblwiOiBcIiMyMjhiMjJcIixcbiAgXCJmdWNoc2lhXCI6IFwiI2ZmMDBmZlwiLFxuICBcImdhaW5zYm9yb1wiOiBcIiNkY2RjZGNcIixcbiAgXCJnaG9zdHdoaXRlXCI6IFwiI2Y4ZjhmZlwiLFxuICBcImdvbGRcIjogXCIjZmZkNzAwXCIsXG4gIFwiZ29sZGVucm9kXCI6IFwiI2RhYTUyMFwiLFxuICBcImdyYXlcIjogXCIjODA4MDgwXCIsXG4gIFwiZ3JlZW5cIjogXCIjMDA4MDAwXCIsXG4gIFwiZ3JlZW55ZWxsb3dcIjogXCIjYWRmZjJmXCIsXG4gIFwiaG9uZXlkZXdcIjogXCIjZjBmZmYwXCIsXG4gIFwiaG90cGlua1wiOiBcIiNmZjY5YjRcIixcbiAgXCJpbmRpYW5yZWQgXCI6IFwiI2NkNWM1Y1wiLFxuICBcImluZGlnb1wiOiBcIiM0YjAwODJcIixcbiAgXCJpdm9yeVwiOiBcIiNmZmZmZjBcIixcbiAgXCJraGFraVwiOiBcIiNmMGU2OGNcIixcbiAgXCJsYXZlbmRlclwiOiBcIiNlNmU2ZmFcIixcbiAgXCJsYXZlbmRlcmJsdXNoXCI6IFwiI2ZmZjBmNVwiLFxuICBcImxhd25ncmVlblwiOiBcIiM3Y2ZjMDBcIixcbiAgXCJsZW1vbmNoaWZmb25cIjogXCIjZmZmYWNkXCIsXG4gIFwibGlnaHRibHVlXCI6IFwiI2FkZDhlNlwiLFxuICBcImxpZ2h0Y29yYWxcIjogXCIjZjA4MDgwXCIsXG4gIFwibGlnaHRjeWFuXCI6IFwiI2UwZmZmZlwiLFxuICBcImxpZ2h0Z29sZGVucm9keWVsbG93XCI6IFwiI2ZhZmFkMlwiLFxuICBcImxpZ2h0Z3JleVwiOiBcIiNkM2QzZDNcIixcbiAgXCJsaWdodGdyZWVuXCI6IFwiIzkwZWU5MFwiLFxuICBcImxpZ2h0cGlua1wiOiBcIiNmZmI2YzFcIixcbiAgXCJsaWdodHNhbG1vblwiOiBcIiNmZmEwN2FcIixcbiAgXCJsaWdodHNlYWdyZWVuXCI6IFwiIzIwYjJhYVwiLFxuICBcImxpZ2h0c2t5Ymx1ZVwiOiBcIiM4N2NlZmFcIixcbiAgXCJsaWdodHNsYXRlZ3JheVwiOiBcIiM3Nzg4OTlcIixcbiAgXCJsaWdodHN0ZWVsYmx1ZVwiOiBcIiNiMGM0ZGVcIixcbiAgXCJsaWdodHllbGxvd1wiOiBcIiNmZmZmZTBcIixcbiAgXCJsaW1lXCI6IFwiIzAwZmYwMFwiLFxuICBcImxpbWVncmVlblwiOiBcIiMzMmNkMzJcIixcbiAgXCJsaW5lblwiOiBcIiNmYWYwZTZcIixcbiAgXCJtYWdlbnRhXCI6IFwiI2ZmMDBmZlwiLFxuICBcIm1hcm9vblwiOiBcIiM4MDAwMDBcIixcbiAgXCJtZWRpdW1hcXVhbWFyaW5lXCI6IFwiIzY2Y2RhYVwiLFxuICBcIm1lZGl1bWJsdWVcIjogXCIjMDAwMGNkXCIsXG4gIFwibWVkaXVtb3JjaGlkXCI6IFwiI2JhNTVkM1wiLFxuICBcIm1lZGl1bXB1cnBsZVwiOiBcIiM5MzcwZDhcIixcbiAgXCJtZWRpdW1zZWFncmVlblwiOiBcIiMzY2IzNzFcIixcbiAgXCJtZWRpdW1zbGF0ZWJsdWVcIjogXCIjN2I2OGVlXCIsXG4gIFwibWVkaXVtc3ByaW5nZ3JlZW5cIjogXCIjMDBmYTlhXCIsXG4gIFwibWVkaXVtdHVycXVvaXNlXCI6IFwiIzQ4ZDFjY1wiLFxuICBcIm1lZGl1bXZpb2xldHJlZFwiOiBcIiNjNzE1ODVcIixcbiAgXCJtaWRuaWdodGJsdWVcIjogXCIjMTkxOTcwXCIsXG4gIFwibWludGNyZWFtXCI6IFwiI2Y1ZmZmYVwiLFxuICBcIm1pc3R5cm9zZVwiOiBcIiNmZmU0ZTFcIixcbiAgXCJtb2NjYXNpblwiOiBcIiNmZmU0YjVcIixcbiAgXCJuYXZham93aGl0ZVwiOiBcIiNmZmRlYWRcIixcbiAgXCJuYXZ5XCI6IFwiIzAwMDA4MFwiLFxuICBcIm9sZGxhY2VcIjogXCIjZmRmNWU2XCIsXG4gIFwib2xpdmVcIjogXCIjODA4MDAwXCIsXG4gIFwib2xpdmVkcmFiXCI6IFwiIzZiOGUyM1wiLFxuICBcIm9yYW5nZVwiOiBcIiNmZmE1MDBcIixcbiAgXCJvcmFuZ2VyZWRcIjogXCIjZmY0NTAwXCIsXG4gIFwib3JjaGlkXCI6IFwiI2RhNzBkNlwiLFxuICBcInBhbGVnb2xkZW5yb2RcIjogXCIjZWVlOGFhXCIsXG4gIFwicGFsZWdyZWVuXCI6IFwiIzk4ZmI5OFwiLFxuICBcInBhbGV0dXJxdW9pc2VcIjogXCIjYWZlZWVlXCIsXG4gIFwicGFsZXZpb2xldHJlZFwiOiBcIiNkODcwOTNcIixcbiAgXCJwYXBheWF3aGlwXCI6IFwiI2ZmZWZkNVwiLFxuICBcInBlYWNocHVmZlwiOiBcIiNmZmRhYjlcIixcbiAgXCJwZXJ1XCI6IFwiI2NkODUzZlwiLFxuICBcInBpbmtcIjogXCIjZmZjMGNiXCIsXG4gIFwicGx1bVwiOiBcIiNkZGEwZGRcIixcbiAgXCJwb3dkZXJibHVlXCI6IFwiI2IwZTBlNlwiLFxuICBcInB1cnBsZVwiOiBcIiM4MDAwODBcIixcbiAgXCJyZWJlY2NhcHVycGxlXCI6IFwiIzY2MzM5OVwiLFxuICBcInJlZFwiOiBcIiNmZjAwMDBcIixcbiAgXCJyb3N5YnJvd25cIjogXCIjYmM4ZjhmXCIsXG4gIFwicm95YWxibHVlXCI6IFwiIzQxNjllMVwiLFxuICBcInNhZGRsZWJyb3duXCI6IFwiIzhiNDUxM1wiLFxuICBcInNhbG1vblwiOiBcIiNmYTgwNzJcIixcbiAgXCJzYW5keWJyb3duXCI6IFwiI2Y0YTQ2MFwiLFxuICBcInNlYWdyZWVuXCI6IFwiIzJlOGI1N1wiLFxuICBcInNlYXNoZWxsXCI6IFwiI2ZmZjVlZVwiLFxuICBcInNpZW5uYVwiOiBcIiNhMDUyMmRcIixcbiAgXCJzaWx2ZXJcIjogXCIjYzBjMGMwXCIsXG4gIFwic2t5Ymx1ZVwiOiBcIiM4N2NlZWJcIixcbiAgXCJzbGF0ZWJsdWVcIjogXCIjNmE1YWNkXCIsXG4gIFwic2xhdGVncmF5XCI6IFwiIzcwODA5MFwiLFxuICBcInNub3dcIjogXCIjZmZmYWZhXCIsXG4gIFwic3ByaW5nZ3JlZW5cIjogXCIjMDBmZjdmXCIsXG4gIFwic3RlZWxibHVlXCI6IFwiIzQ2ODJiNFwiLFxuICBcInRhblwiOiBcIiNkMmI0OGNcIixcbiAgXCJ0ZWFsXCI6IFwiIzAwODA4MFwiLFxuICBcInRoaXN0bGVcIjogXCIjZDhiZmQ4XCIsXG4gIFwidG9tYXRvXCI6IFwiI2ZmNjM0N1wiLFxuICBcInR1cnF1b2lzZVwiOiBcIiM0MGUwZDBcIixcbiAgXCJ2aW9sZXRcIjogXCIjZWU4MmVlXCIsXG4gIFwid2hlYXRcIjogXCIjZjVkZWIzXCIsXG4gIFwid2hpdGVcIjogXCIjZmZmZmZmXCIsXG4gIFwid2hpdGVzbW9rZVwiOiBcIiNmNWY1ZjVcIixcbiAgXCJ5ZWxsb3dcIjogXCIjZmZmZjAwXCIsXG4gIFwieWVsbG93Z3JlZW5cIjogXCIjOWFjZDMyXCJcbn07Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/lib/namedColours.js\n");
 
 /***/ })
 
 /******/ });
 });
-//# sourceMappingURL=kwulers.js.map

@@ -5,18 +5,20 @@ const env = process.env.WEBPACK_ENV;
 
 const libraryName = 'kwulers';
 
-let outputFile;
+let outputFile, devtool;
 
 
 module.exports = (env, options) => {
   if (options.mode === 'production') {
     outputFile = libraryName + '.min.js';
+    devtool = 'source-map';
   } else {
     outputFile = libraryName + '.js';
+    devtool = 'eval-source-map';
   }
   return {
     entry: __dirname + '/src/' + libraryName + '.js',
-    devtool: 'source-map',
+    devtool: devtool,
     output: {
       path: __dirname + '/dist',
       filename: outputFile,

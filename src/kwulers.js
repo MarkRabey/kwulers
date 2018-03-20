@@ -1,3 +1,4 @@
+'use strict';
 import { getCSSFromRGB } from './getCSSFromRGB';
 import { getCSSFromRGBA } from './getCSSFromRGBA';
 import { getHexFromRGB } from './getHexFromRGB';
@@ -30,6 +31,7 @@ export default {
   getCSSFromRGB,
   getCSSFromRGBA,
   getHexFromRGB,
+  getHexFromName,
   getRGBFromRGBA,
   getRGBFromHex,
   getHSLFromRGB,

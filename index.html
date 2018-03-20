@@ -3,27 +3,159 @@
   <head>
     <title>Kwulers</title>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   </head>
   <body>
-    <table id="demo">
-      <thead>
-        <tr>
-          <th>Colour</th>
-          <th>Colour Name</th>
-          <th>Hex</th>
-          <th>RGB</th>
-          <th>HSL</th>
-        </tr>
-      </thead>
-      <tbody>
+    <header class="hero is-fullheight is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Kwulers
+          </h1>
+          <h2 class="subtitle">
+            A JavaScript library for converting colours between various formats.
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="title">Installation</h3>
+        Kwulers can be used in both the browser, or as a <a href="https://nodejs.org" target="_blank">Node</a> module.
+        <hr>
+
+        <div class="content">
+          <h4 class="subtitle">Browser</h4>
+
+          Download the latest release and copy <code>kwulers/dist/kwulers.js</code> or <code>kwulers/dist/kwulers.min.js</code> to your project. Include Kwulers in your HTML:
+          
+          <pre><code>&lt;script type="text/javascript" src="kwulers.min.js"&gt;&lt;/script&gt;</code></pre>
+
+          <hr>
+          <h4 class="subtitle">Node</h4>
+          
+          Install with npm:
+          <pre><code>npm install kwulers</code></pre>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="title">Usage</h3>
+        <hr>
+        <div class="content">
+          <p>
+            Once included, access kwulers with <code>window.kwulers</code> or simply <code>kwulers</code>.
+          </p>
+
+          <p>
+            Kwulers also allows for ES6 imports. Import the whole library:
+            <pre><code>import kwulers from 'kwulers';</code></pre>
+          </p>
+          
+          <p>
+            Or import only the methods you need:
+            <pre><code>import { getRGBFromHex } from 'kwulers';</code></pre>
+          </p>
+        </div>
+
         
-      </tbody>
-    </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="title">Available Methods</h3>
+        <hr>
+
+        <div class="content">
+          <table id="methods" class="table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Argument</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <table id="demo" class="table is-fullwidth">
+          <thead class="thead-light">
+            <tr>
+              <th>Colour</th>
+              <th>Colour Name</th>
+              <th>Hex</th>
+              <th>RGB</th>
+              <th>HSL</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
     <script src="dist/kwulers.js"></script>
 
     <script type="text/javascript">
+      const methodsTable = document.getElementById('methods');
+      const methodsTBody = methodsTable.querySelector('tbody');
       const table = document.getElementById('demo');
       const tbody = table.querySelector('tbody');
+
+      const methods = Object.keys(kwulers.default);
+      let i;
+
+      for (i = 0; i < methods.length; i++) {
+        const method = methods[i];
+        const row = document.createElement('tr');
+        const methodParts = method.split('From');
+        const methodType = methodParts[methodParts.length - 1].toLowerCase();
+        let exampleInput;
+        let exampleInputString;
+        let argument;
+
+        if (methodType === 'rgb') {
+          exampleInput = [125,150,178];
+          exampleInputString = '[125,150,178]';
+          argument = 'Array containing RGB values';
+        } else if (methodType === 'rgba') {
+          exampleInput = [125,150,178,.75];
+          exampleInputString = '[125,150,178,.75]';
+          argument = 'Array containing RGBA values';
+        } else if (methodType === 'hex') {
+          exampleInput = '#0000ff';
+          exampleInputString = '\'#0000ff\'';
+          argument = 'CSS Hex value as a string';
+        } else if (methodType === 'hsl') {
+          exampleInput = [240,100,50];
+          exampleInputString = '[240,100,50]';
+          argument = 'Array containing HSL values';
+        } else if (methodType === 'name') {
+          exampleInput = 'mediumaquamarine';
+          exampleInputString = '\'mediumaquamarine\'';
+          argument = 'Named colour';
+        }
+
+        row.innerHTML = `
+          <td><code>${ method }()</code></td>
+          <td>${ argument }</td>
+          <td>
+            <code>console.log(kwulers.${ method }(${ exampleInputString })); // ${ kwulers[method](exampleInput) }</code>
+          </td>
+        `;
+
+        methodsTBody.append(row);
+      }
 
       const colours = [
         "Black",
@@ -44,11 +176,22 @@
         "Navy",
       ];
 
-      for (let i = 0; i <= colours.length; i++) {
-        console.log('' + i + ' = ' + colours[i]);
-      }
+      for (i = 0; i < colours.length; i++) {
+        const name = colours[i];
+        const hex = kwulers.getHexFromName(name);
+        const rgb = kwulers.getRGBFromHex(hex);
+        const hsl = kwulers.getHSLFromHex(hex);
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td style="background-color: ${ hex }"></td>
+          <td>${ name }</td>
+          <td>${ hex }</td>
+          <td>(${ rgb })</td>
+          <td>(${ hsl })</td>
+        `;
 
-      console.log(kwulers);
+        tbody.append(row);
+      }
     </script>
   </body>
 </html>

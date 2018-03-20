@@ -1,3 +1,4 @@
+'use strict';
 import { getRGBFromHSL } from './getRGBFromHSL';
 import { getHexFromRGB } from './getHexFromRGB';
 
