@@ -1,0 +1,28 @@
+{
+  "name": "kwulers",
+  "version": "0.1.0",
+  "description": "JS Library for converting colors to various formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkRabey/kwulers.git"
+  },
+  "keywords": [
+    "color",
+    "colour",
+    "colors",
+    "rgb",
+    "rgba",
+    "hex",
+    "convert"
+  ],
+  "author": "Mark Rabey <mark@markrabey.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarkRabey/kwulers/issues"
+  },
+  "homepage": "https://github.com/MarkRabey/kwulers#readme"
+}
