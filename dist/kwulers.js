@@ -161,6 +161,59 @@ var getHexFromRGB = exports.getHexFromRGB = function getHexFromRGB(rgb) {
 
 /***/ }),
 
+/***/ "./src/getRGBFromHex.js":
+/*!******************************!*\
+  !*** ./src/getRGBFromHex.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * [description]
+ * @param  {[type]} hex [description]
+ * @return {[type]}     [description]
+ */
+var getRGBFromHex = exports.getRGBFromHex = function getRGBFromHex(hex) {
+  hex = hex.replace(/^#/, '');
+  if (hex.length === 3) {
+    hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+  }
+  var num = parseInt(hex, 16);
+  return [num >> 16, num >> 8 & 255, num & 255];
+};
+
+/***/ }),
+
+/***/ "./src/getRGBFromRGBA.js":
+/*!*******************************!*\
+  !*** ./src/getRGBFromRGBA.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * [description]
+ * @param  {[type]} rgba [description]
+ * @return {[type]}      [description]
+ */
+var getRGBFromRGBA = exports.getRGBFromRGBA = function getRGBFromRGBA(rgba) {
+  return [rgba[0], rgba[1], rgba[2]];
+};
+
+/***/ }),
+
 /***/ "./src/kwulers.js":
 /*!************************!*\
   !*** ./src/kwulers.js ***!
@@ -174,7 +227,7 @@ var getHexFromRGB = exports.getHexFromRGB = function getHexFromRGB(rgb) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getHexFromRGB = exports.getCSSFromRGBA = exports.getCSSFromRGB = undefined;
+exports.getRGBFromHex = exports.getRGBFromRGBA = exports.getHexFromRGB = exports.getCSSFromRGBA = exports.getCSSFromRGB = undefined;
 
 var _getCSSFromRGB = __webpack_require__(/*! ./getCSSFromRGB */ "./src/getCSSFromRGB.js");
 
@@ -182,13 +235,21 @@ var _getCSSFromRGBA = __webpack_require__(/*! ./getCSSFromRGBA */ "./src/getCSSF
 
 var _getHexFromRGB = __webpack_require__(/*! ./getHexFromRGB */ "./src/getHexFromRGB.js");
 
+var _getRGBFromRGBA = __webpack_require__(/*! ./getRGBFromRGBA */ "./src/getRGBFromRGBA.js");
+
+var _getRGBFromHex = __webpack_require__(/*! ./getRGBFromHex */ "./src/getRGBFromHex.js");
+
 exports.getCSSFromRGB = _getCSSFromRGB.getCSSFromRGB;
 exports.getCSSFromRGBA = _getCSSFromRGBA.getCSSFromRGBA;
 exports.getHexFromRGB = _getHexFromRGB.getHexFromRGB;
+exports.getRGBFromRGBA = _getRGBFromRGBA.getRGBFromRGBA;
+exports.getRGBFromHex = _getRGBFromHex.getRGBFromHex;
 exports.default = {
   getCSSFromRGB: _getCSSFromRGB.getCSSFromRGB,
   getCSSFromRGBA: _getCSSFromRGBA.getCSSFromRGBA,
-  getHexFromRGB: _getHexFromRGB.getHexFromRGB
+  getHexFromRGB: _getHexFromRGB.getHexFromRGB,
+  getRGBFromRGBA: _getRGBFromRGBA.getRGBFromRGBA,
+  getRGBFromHex: _getRGBFromHex.getRGBFromHex
 };
 
 /***/ })
