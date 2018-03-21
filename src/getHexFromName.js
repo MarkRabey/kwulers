@@ -12,4 +12,4 @@ export const getHexFromName = (name) => {
   }
 
   return false;
-}
+};

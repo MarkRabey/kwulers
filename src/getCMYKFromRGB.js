@@ -21,4 +21,4 @@ export const getCMYKFromRGB = (rgb) => {
     Math.round(y * 100) / 100,
     Math.round(k * 100) / 100
   ];
-}
+};

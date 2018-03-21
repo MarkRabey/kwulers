@@ -10,4 +10,4 @@ import { getHexFromRGB } from './getHexFromRGB';
 export const getHexFromHSL = (hsl) => {
   const rgb = getRGBFromHSL(hsl);
   return getHexFromRGB(rgb);
-}
+};

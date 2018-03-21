@@ -11,4 +11,4 @@ export const getRGBFromHex = (hex) => {
   }
   let num = parseInt(hex, 16);
   return [num >> 16, num >> 8 & 255, num & 255];
-}
+};

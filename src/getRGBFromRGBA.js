@@ -6,4 +6,4 @@
  */
 export const getRGBFromRGBA = (rgba) => {
   return [rgba[0], rgba[1], rgba[2]];
-}
+};

@@ -18,4 +18,4 @@ export const getHexFromRGB = (rgb) => {
   }
 
   return `#${ hex.join('').toUpperCase() }`;
-}
+};

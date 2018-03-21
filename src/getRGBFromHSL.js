@@ -38,4 +38,4 @@ export const getRGBFromHSL = (hsl) => {
   }
 
   return rgb;
-}
+};

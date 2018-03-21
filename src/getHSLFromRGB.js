@@ -40,4 +40,4 @@ export const getHSLFromRGB = (rgb) => {
   }
 
   return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];
-}
+};

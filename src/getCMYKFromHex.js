@@ -10,4 +10,4 @@ import { getCMYKFromRGB } from './getCMYKFromRGB';
 export const getCMYKFromHex = (hex) => {
   const rgb = getRGBFromHex(hex);
   return getCMYKFromRGB(rgb);
-}
+};

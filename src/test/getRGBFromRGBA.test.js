@@ -1,5 +1,4 @@
 import { expect } from 'chai';
-
 import { getRGBFromRGBA } from '../getRGBFromRGBA';
 
 describe('getRGBFromRGBA', () => {
